@@ -692,7 +692,7 @@ footer div.social-media div#facebook,
 footer div.social-media div#twitter,
 footer div.social-media div#linked-in,
 footer div.social-media div#instagram {
-  margin: -10px 10px;
+  margin: -10px 5px;
   float: right;
   background: #FFF;
   width: 40px;
@@ -703,24 +703,16 @@ footer div.social-media div#instagram {
   padding-top: 4px;
   border: 1px solid #CCC;
   transition: all .2s ease-in-out;
+  padding: 8px 0;
 }
 
 footer div.social-media div#facebook i,
 footer div.social-media div#twitter i,
 footer div.social-media div#linked-in i,
 footer div.social-media div#instagram i {
-  font-size: 1.3em;
+  font-size: 1.4em;
   transition: .1s ease-in-out;
   color: #2e2e2e;
-}
-
-footer div.social-media div#linked-in {
-  padding-top: 8px;
-  padding-left: 8px;
-}
-
-footer div.social-media div#instagram {
-  padding-left: 6px;
 }
 
 footer div.social-media div#facebook:hover {

@@ -71,7 +71,8 @@
                         <h1>contact me</h1>
                         <h4>if you have a job for me, so please contact me.
                         </h4>
-                        <p id="email">daryankamalifar@gmail.com <span id="or">||</span> 
+                        <p id="email">daryankamalifar@gmail.com
+                            <span id="or">||</span>
                             <span id="second-email">daryankf@outlook.dk</span>
                         </p>
                         <p id="phone-num">Phone number:
@@ -81,17 +82,17 @@
                             <ul>
                                 <li id="facebook">
                                     <a href="">
-                                        <i class="ion-social-facebook"></i>
+                                        <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li id="twitter">
                                     <a href="">
-                                        <i class="ion-social-twitter"></i>
+                                        <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li id="instagram">
                                     <a href="">
-                                        <i class="ion-social-instagram"></i>
+                                        <i class="fa fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li id="linked-in">
@@ -113,39 +114,38 @@
 
     </section>
 
-  
-    <!-- section Map My address -->
-    <section class="map">
+    <!-- Send a message -->
+    <section class="send-message">
         <div class="container">
-        <div id="map" style="width:100%;height:500px"></div>
-        
+            <div class="row">
+                <form class="cf" action="https://formspree.io/daryankamalifar@gmail.com" method="POST">
+                    <div class="left">
+                        <input type="text" id="input-name" name="name" placeholder="Name">
+                        <input type="text" id="input-from" name="from" placeholder="From(company and city)">
+                        <input type="email" id="input-email" name="_replyto" placeholder="Email address">
+                    </div>
+
+                    <div class="right">
+                        <textarea name="message" type="text" id="input-message" placeholder="Message" cols="63" rows="1"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Send" id="input-submit">
+                    </div>
+
+
+                </form>
+            </div>
         </div>
     </section>
 
-      <!-- Send a message -->
-      <section class="send-message">
-            <div class="container">
-                <div class="row">
-                    <form class="cf" action="https://formspree.io/daryankamalifar@gmail.com" method="POST">
-                        <div class="left">
-                            <input type="text" id="input-name" name="name" placeholder="Name">
-                            <input type="text" id="input-from" name="from" placeholder="From(company and city)">
-                            <input type="email" id="input-email" name="_replyto" placeholder="Email address">
-                        </div>
-    
-                        <div class="right">
-                            <textarea name="message" type="text" id="input-message" placeholder="Message" cols="63" rows="1"></textarea>
-                        </div>
-                        <div class="submit">
-                            <input type="submit" value="Send" id="input-submit">
-                        </div>
-    
-    
-                    </form>
-                </div>
-            </div>
-        </section>
-    
+
+    <!-- section Map My address -->
+    <section class="map">
+            <div id="map" style="width:100%;height:500px"></div>
+
+    </section>
+
+
     <!-- footer-->
     <footer>
         <div class="container">
@@ -162,22 +162,23 @@
                     <div class="social-media">
                         <div id="facebook">
                             <a href="">
-                                <i class="ion-social-facebook"></i>
+                                <i class="fa fa-facebook"></i>
                             </a>
                         </div>
                         <div id="twitter">
                             <a href="">
-                                <i class="ion-social-twitter"></i>
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+
+                        <div id="linked-in">
+                            <a href="">
+                                <i class="fa fa-linkedin"></i>
                             </a>
                         </div>
                         <div id="instagram">
                             <a href="">
-                                <i class="ion-social-instagram"></i>
-                            </a>
-                        </div>
-                        <div id="linked-in">
-                            <a href="">
-                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-instagram"></i>
                             </a>
                         </div>
                     </div>
@@ -194,7 +195,7 @@
     <script src="js/bootstrap/bootstrap.css"></script>
     <script src="js/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFIaF-7KYUnuH6MNdOIZWV8CZzuXoCUBQ&callback=myMap"></script>
-    
+
 </body>
 
 </html>

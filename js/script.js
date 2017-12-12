@@ -139,12 +139,22 @@ function myMap() {
     var myCenter = new google.maps.LatLng(55.892251, 12.491735);
     var mapOptions = {
         center: myCenter,
-        zoom: 5
+        zoom: 5,
+        mapTypeControl: true,
+        mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU}
     };
+    
+    
     var map = new google.maps.Map(mapCanvas, mapOptions);
     var marker = new google.maps.Marker({
         position: myCenter,
         animation: google.maps.Animation.BOUNCE
     });
     marker.setMap(map);
+
+    // Zoom to 20 when clicking on marker
+    google.maps.event.addListener(marker,'click',function() {
+        map.setZoom(15);
+        map.setCenter(marker.getPosition());
+      });
 }
