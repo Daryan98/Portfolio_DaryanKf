@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header div#contact {
+  width: 20%;
+  height: 60px;
+  display: inline;
+  float: right;
+  padding: 10px 0;
+  position: relative;
+}
+
+header div#contact ul.active {
+  text-decoration: none;
+  text-align: right;
+  line-height: 80px;
+}
+
+header div#contact ul.active li {
+  color: #FFF;
+}
+
+header div#contact ul.active div {
+  background: #ffa000;
+  display: inline;
+  float: right;
+  right: -2px;
+  transition: all .3s ease-out;
+  width: 155px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+section.about-me {
+  border-bottom: none;
+  padding: 0;
+}
+
+section.about-me .row div#about-content p {
+  margin-top: 50px !important;
+  margin-bottom: 0 !important;
+}
+
+section.about-me .row div#about-content p#phone-num {
+  margin-top: 15px !important;
+}
+
+section.about-me .row div#about-content div.contact-social-media {
+  float: left;
+  width: 100%;
+}
+
+section.about-me .row div#about-content div.contact-social-media ul {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+section.about-me .row div#about-content div.contact-social-media ul li {
+  width: 60px;
+  height: 60px;
+  background-color: #CCC;
+  border-radius: 100%;
+  display: inline;
+  float: left;
+  text-align: center;
+  padding: 7px;
+  margin-right: 12px;
+  opacity: .8;
+  transition: opacity .2s;
+}
+
+section.about-me .row div#about-content div.contact-social-media ul li:hover {
+  opacity: 1;
+}
+
+section.about-me .row div#about-content div.contact-social-media ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+section.about-me .row div#about-content div.contact-social-media ul li a i {
+  font-size: 2em;
+}
+
+section.about-me .row div#about-content div.contact-social-media ul li#facebook {
+  background-color: #3b5998;
+}
+
+section.about-me .row div#about-content div.contact-social-media ul li#twitter {
+  background-color: #00aced;
+}
+
+section.about-me .row div#about-content div.contact-social-media ul li#instagram {
+  background-color: #bc2a8d;
+}
+
+section.about-me .row div#about-content div.contact-social-media ul li#linked-in {
+  padding-top: 13px;
+  background-color: #007bb6;
+}
+
+section.send-message {
+  padding: 80px;
+  width: 100%;
+  height: 500px;
+  background-color: #ebebeb;
+}
+
+section.send-message h1 {
+  text-align: center;
+  color: #a8a8a8;
+  text-shadow: 1px 1px 0 white;
+}
+
+section.send-message form {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+section.send-message form input,
+section.send-message form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+section.send-message form input:focus,
+section.send-message form textarea:focus {
+  box-shadow: 0 0px 2px #ffa000 !important;
+}
+
+section.send-message form .submit {
+  padding: 10px;
+}
+
+section.send-message form .submit #input-submit {
+  color: white;
+  background: #ffa000;
+  cursor: pointer;
+}
+
+section.send-message form .submit #input-submit:hover {
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+section.send-message form textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 8px;
+}
+
+section.send-message .right {
+  padding: 10px;
+  width: 50%;
+  display: inline;
+  float: left;
+}
+
+section.send-message .left {
+  padding: 10px;
+  width: 50%;
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+section.map div {
+  position: relative;
+}
+
+section.map div h3 {
+  color: #ffa000;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+}
+ 
+
+ /*# sourceMappingURL= contact.css.map */
