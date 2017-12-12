@@ -343,25 +343,20 @@ section.skills .skills div#labels p {
   color: #5e5e5e;
 }
 
-section.skills .skills div#labels p span {
-  display: block;
-  font-weight: bold;
-}
-
 section.skills .skills div#labels p:nth-child(1) {
-  margin-top: -23px;
+  margin-top: -10px;
 }
 
 section.skills .skills div#labels p:nth-child(2) {
-  margin-top: 40px;
+  margin-top: 58px;
 }
 
 section.skills .skills div#labels p:nth-child(3) {
-  margin-top: 55px;
+  margin-top: 78px;
 }
 
 section.skills .skills div#labels p:nth-child(4) {
-  margin-top: 77px;
+  margin-top: 100px;
 }
 
 section.skills .skills div#strokes {
