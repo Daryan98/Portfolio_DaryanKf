@@ -29,7 +29,7 @@ header div#contact ul.active div {
   float: right;
   right: -2px;
   transition: all .3s ease-out;
-  width: 155px;
+  width: 150px;
   height: 50px;
   margin-top: 5px;
 }
