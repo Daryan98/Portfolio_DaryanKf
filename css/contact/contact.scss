@@ -19,23 +19,20 @@ header div#contact {
     position: relative;
     ul.active {
         text-decoration: none;
-        text-align: right; // margin: 15px 0px 16px 0;
+        text-align: right; 
         line-height: 80px;
         li {
             color: #FFF;
         }
         div {
-            // width: 15px;
-            // margin-top: -10px;
-            // height: 80px;
             background: $primary-color;
             display: inline;
             float: right;
             right: -2px;
-            transition: all .3s ease-out;
             width: 150px;
             height: 50px;
             margin-top: 5px;
+            transition: all .3s ease-out;
         }
     }
 }

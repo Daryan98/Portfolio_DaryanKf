@@ -28,10 +28,10 @@ header div#contact ul.active div {
   display: inline;
   float: right;
   right: -2px;
-  transition: all .3s ease-out;
   width: 150px;
   height: 50px;
   margin-top: 5px;
+  transition: all .3s ease-out;
 }
 
 section.about-me {
