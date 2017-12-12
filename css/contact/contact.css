@@ -24,7 +24,7 @@ header div#contact ul.active li {
 }
 
 header div#contact ul.active div {
-  background: #1FAB89;
+  background-color: #1FAB89;
   display: inline;
   float: right;
   right: -2px;
