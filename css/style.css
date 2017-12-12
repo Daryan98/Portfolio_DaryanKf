@@ -5,6 +5,41 @@
   font-family: raleway;
 }
 
+#scroll-top {
+  position: absolute;
+  z-index: 3;
+}
+
+#scroll-top a {
+  position: fixed;
+  right: 0;
+  top: 80%;
+  width: 50px;
+  height: 40px;
+  background: #ebebeb;
+  padding: 0 15px;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#scroll-top a i {
+  color: #2e2e2e;
+  font-size: 1.3em;
+  line-height: 40px;
+  transition: all .2s ease;
+}
+
+#scroll-top a i.rotate {
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+
+#scroll-top a:hover i.rotate {
+  display: inline-block;
+  transform: rotate(45deg);
+  color: #1FAB89;
+}
+
 header {
   width: 100%;
   height: 80px;
@@ -55,7 +90,7 @@ header nav div#navbar ul li {
 }
 
 header nav div#navbar ul li:hover {
-  color: #ffa000;
+  color: #1FAB89;
 }
 
 header nav div#navbar ul li::after {
@@ -64,7 +99,7 @@ header nav div#navbar ul li::after {
   display: block;
   width: 0;
   height: 5px;
-  background: #ffa000;
+  background: #1FAB89;
   transition: width .3s;
 }
 
@@ -89,7 +124,7 @@ header nav div#contact ul {
 }
 
 header nav div#contact ul:hover div {
-  width: 155px;
+  width: 150px;
   height: 50px;
   margin-top: 5px;
 }
@@ -117,7 +152,7 @@ header nav div#contact ul li {
 }
 
 header nav div#contact ul li a {
-  color: #ffa000;
+  color: #1FAB89;
   text-decoration: none;
   transition: color .5s ease-in-out;
 }
@@ -126,7 +161,7 @@ header nav div#contact ul div {
   width: 15px;
   margin-top: -10px;
   height: 80px;
-  background: #ffa000;
+  background: #1FAB89;
   display: inline;
   float: right;
   right: -2px;
@@ -243,7 +278,7 @@ section.about-me .goal-row .goal-content #goal-learn div#goal-slider div img {
   list-style: none;
   float: left;
   width: 100%;
-  color: #ffa000;
+  color: #1FAB89;
   font-weight: bold;
   border-radius: 5px;
   transition: transform .2s ease-out;
@@ -654,7 +689,7 @@ section.project div#photos div#pic .about-website div.view a:nth-child(2) {
 }
 
 section.project div#photos div#pic .about-website div.view a p {
-  color: #ffa000;
+  color: #1FAB89;
   font-weight: bold;
   font-size: .95em;
   transition: all .2s;
@@ -695,15 +730,14 @@ footer div.social-media {
   float: right;
 }
 
-footer div.social-media div#facebook,
-footer div.social-media div#twitter,
-footer div.social-media div#instagram,
-footer div.social-media div#linked-in {
-  margin: -10px 5px;
-  float: right;
-  background: #FFF;
+footer div.social-media ul li {
+  list-style: none;
   width: 40px;
   height: 40px;
+  display: inline;
+  float: right;
+  margin: -10px 5px;
+  background: #FFF;
   border-radius: 100%;
   text-align: center;
   border: 1px solid #CCC;
@@ -711,44 +745,45 @@ footer div.social-media div#linked-in {
   line-height: 40px;
 }
 
-footer div.social-media div#facebook i,
-footer div.social-media div#twitter i,
-footer div.social-media div#instagram i,
-footer div.social-media div#linked-in i {
-  font-size: 1.4em;
+footer div.social-media ul li a {
+  text-decoration: none;
+}
+
+footer div.social-media ul li a i {
+  font-size: 1.3em;
   transition: .1s ease-in-out;
   color: #2e2e2e;
 }
 
-footer div.social-media div#facebook:hover {
+footer div.social-media ul li#facebook:hover {
   border: 1px solid #3b5998;
 }
 
-footer div.social-media div#facebook:hover i {
+footer div.social-media ul li#facebook:hover i {
   color: #3b5998;
 }
 
-footer div.social-media div#twitter:hover {
+footer div.social-media ul li#twitter:hover {
   border: 1px solid #00aced;
 }
 
-footer div.social-media div#twitter:hover i {
+footer div.social-media ul li#twitter:hover i {
   color: #00aced;
 }
 
-footer div.social-media div#instagram:hover {
+footer div.social-media ul li#instagram:hover {
   border: 1px solid #bc2a8d;
 }
 
-footer div.social-media div#instagram:hover i {
+footer div.social-media ul li#instagram:hover i {
   color: #bc2a8d;
 }
 
-footer div.social-media div#linked-in:hover {
+footer div.social-media ul li#linked-in:hover {
   border: 1px solid #007bb6;
 }
 
-footer div.social-media div#linked-in:hover i {
+footer div.social-media ul li#linked-in:hover i {
   color: #007bb6;
 }
  

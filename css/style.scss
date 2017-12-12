@@ -1,4 +1,4 @@
-$primary-color: #ffa000;
+$primary-color: #1FAB89;
 $secondary-color:rgb(245, 245, 245);
 $text-color: #5e5e5e;
 $text-color-darker:#2e2e2e;
@@ -24,6 +24,40 @@ $git: #E67E22;
     padding: 0;
     box-sizing: border-box;
     font-family: raleway;
+}
+
+#scroll-top {
+    position: absolute;
+  z-index: 3;
+    a {
+        position: fixed;
+        right: 0;
+        top: 80%;
+        width: 50px;
+        height: 40px;
+        background: rgb(235, 235, 235);
+        padding: 0 15px;
+        border-radius: 20px 0 0 20px;
+        box-shadow: 0 0 5px 0 rgba( #000000,  .5);
+        i {
+            color: $icon-color;
+            font-size: 1.3em;
+            line-height: 40px;
+            transition: all .2s ease;
+            &.rotate {
+                display: inline-block;
+                transform: rotate(-45deg);
+            }
+            
+        }
+        &:hover{
+            i.rotate {
+                display: inline-block;
+                transform: rotate(45deg);
+                color: $primary-color;
+            }
+        }
+    }
 }
 
 body {
@@ -70,7 +104,7 @@ header {
                     color: $text-color;
                     cursor: pointer;
                     transition: all .3s;
-                    &:hover{
+                    &:hover {
                         color: $primary-color;
                     }
                     &::after {
@@ -102,7 +136,7 @@ header {
                 line-height: 80px;
                 &:hover {
                     div {
-                        width: 155px;
+                        width: 150px;
                         height: 50px;
                         margin-top: 5px;
                     }
@@ -180,10 +214,9 @@ section.about-me {
             h4 {
                 font-weight: 300;
                 letter-spacing: 1px;
-                margin: 25px 0 ;
+                margin: 25px 0;
                 word-spacing: 1px;
                 color: $text-color;
-                
             }
             p {
                 font-size: 14px;
@@ -229,7 +262,7 @@ section.about-me {
                         display: inline;
                         float: left;
                         margin: 20px 1%;
-                        box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.10); // height:100px;
+                        box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.10);
                         img {
                             text-align: center;
                             list-style: none;
@@ -270,7 +303,6 @@ section.scheduel {
         margin-left: 50px;
         ul {
             text-decoration: none;
-            
             li {
                 margin-bottom: 5px;
                 list-style: none;
@@ -295,7 +327,7 @@ section.scheduel {
     div#coding {
         float: right;
         margin-top: 80px;
-        margin-right: 50px; 
+        margin-right: 50px;
         ul {
             text-decoration: none;
             text-align: left;
@@ -657,49 +689,53 @@ footer {
         }
     }
     div.social-media {
-        float: right; // text-align: right;
-        div#facebook,
-        div#twitter,
-        div#instagram,
-        div#linked-in {
-            margin: -10px 5px; // display: inline;
-            float: right;
-            background: #FFF;
-            width: 40px;
-            height: 40px;
-            border-radius: 100%;
-            text-align: center;
-            border: 1px solid #CCC;
-            transition: all .2s ease-in-out;
-            line-height: 40px;
-            i {
-                font-size: 1.4em;
-                transition: .1s ease-in-out;
-                color: $icon-color;
+        float: right;
+        ul {
+            li {
+                list-style: none;
+                width: 40px;
+                height: 40px;
+                display: inline;
+                float: right;
+                margin: -10px 5px;
+                background: #FFF;
+                border-radius: 100%;
+                text-align: center;
+                border: 1px solid #CCC;
+                transition: all .2s ease-in-out;
+                line-height: 40px;
+                a {
+                    text-decoration: none;
+                    i {
+                        font-size: 1.3em;
+                        transition: .1s ease-in-out;
+                        color: $icon-color;
+                    }
+                }
             }
-        }
-        div#facebook:hover {
-            border: 1px solid #3b5998;
-            i {
-                color: #3b5998;
+            li#facebook:hover {
+                border: 1px solid #3b5998;
+                i {
+                    color: #3b5998;
+                }
             }
-        }
-        div#twitter:hover {
-            border: 1px solid #00aced;
-            i {
-                color: #00aced;
+            li#twitter:hover {
+                border: 1px solid #00aced;
+                i {
+                    color: #00aced;
+                }
             }
-        }
-        div#instagram:hover {
-            border: 1px solid #bc2a8d;
-            i {
-                color: #bc2a8d;
+            li#instagram:hover {
+                border: 1px solid #bc2a8d;
+                i {
+                    color: #bc2a8d;
+                }
             }
-        }
-        div#linked-in:hover {
-            border: 1px solid #007bb6;
-            i {
-                color: #007bb6;
+            li#linked-in:hover {
+                border: 1px solid #007bb6;
+                i {
+                    color: #007bb6;
+                }
             }
         }
     }

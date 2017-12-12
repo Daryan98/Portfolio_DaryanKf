@@ -1,12 +1,18 @@
 $(document).ready(function () {
 
-    // Scroll
+    // Scroll when clicking the nav items
     $('div#navbar ul a').click(function () {
         $("html, body").animate({
             scrollTop: $($(this).attr('href')).offset().top - 0
         }, 300);
     });
 
+    // Scrool to top
+    $('div#scroll-top a').click(function () {
+        $("html, body").animate({
+            scrollTop: $($(this).attr('href')).offset().top - 0
+        }, 150);
+    });
 
     // Skills slider  
     $('ul#graph-skills').carouFredSel({

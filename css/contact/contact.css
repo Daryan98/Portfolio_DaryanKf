@@ -40,12 +40,11 @@ section.about-me {
 }
 
 section.about-me .row div#about-content p {
-  margin-top: 50px !important;
   margin-bottom: 0 !important;
 }
 
 section.about-me .row div#about-content p#phone-num {
-  margin-top: 15px !important;
+  margin-top: 10px !important;
 }
 
 section.about-me .row div#about-content p span#or {
@@ -58,7 +57,7 @@ section.about-me .row div#about-content div.contact-social-media {
 }
 
 section.about-me .row div#about-content div.contact-social-media ul {
-  margin-top: 60px;
+  margin-top: 90px;
   margin-bottom: 0;
 }
 
