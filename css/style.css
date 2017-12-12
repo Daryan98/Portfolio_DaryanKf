@@ -18,7 +18,7 @@ header nav div#logo {
 }
 
 header nav div#logo img {
-  width: 60px;
+  width: 65px;
   margin: 20px 50px;
 }
 
@@ -44,7 +44,7 @@ header nav div#navbar ul li {
   text-align: center;
   list-style: none;
   display: inline-block;
-  margin: 0px 10px;
+  margin: 0px 5px;
   font-size: .9em;
   font-weight: bold;
   font-family: raleway;
@@ -52,6 +52,10 @@ header nav div#navbar ul li {
   color: #5e5e5e;
   cursor: pointer;
   transition: all .3s;
+}
+
+header nav div#navbar ul li:hover {
+  color: #ffa000;
 }
 
 header nav div#navbar ul li::after {
@@ -164,20 +168,21 @@ section.about-me .row div#about-content h1 {
   font-weight: 600;
   font-size: 3.5em;
   color: #2e2e2e;
+  margin-bottom: 0;
 }
 
 section.about-me .first-row div#about-content h4,
 section.about-me .row div#about-content h4 {
   font-weight: 300;
   letter-spacing: 1px;
-  margin: 20px 0 40px;
-  word-spacing: 2px;
+  margin: 25px 0;
+  word-spacing: 1px;
   color: #5e5e5e;
 }
 
 section.about-me .first-row div#about-content p,
 section.about-me .row div#about-content p {
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: .5px;
   word-spacing: 4px;
@@ -249,35 +254,37 @@ section.about-me .goal-row .goal-content #goal-learn div#goal-slider div img:hov
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-section.sceduel {
+section.scheduel {
   background: #f8f8f8;
   width: 100%;
   padding: 80px 0;
   box-shadow: 0px 4px 14px -6px rgba(0, 0, 0, 0.1);
 }
 
-section.sceduel div#design {
+section.scheduel div#design {
   float: left;
-}
-
-section.sceduel div#design ul {
-  text-decoration: none;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-left: 50px;
 }
 
-section.sceduel div#design ul li {
+section.scheduel div#design ul {
+  text-decoration: none;
+}
+
+section.scheduel div#design ul li {
+  margin-bottom: 5px;
   list-style: none;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 1.2em;
   color: #5e5e5e;
 }
 
-section.sceduel div#circle-graph {
+section.scheduel div#circle-graph {
   margin: 0 auto;
   justify-content: center;
 }
 
-section.sceduel div#circle-graph img {
+section.scheduel div#circle-graph img {
   margin: 0 auto;
   width: 350px;
   margin-left: 18%;
@@ -286,20 +293,22 @@ section.sceduel div#circle-graph img {
   transition: all .5s ease-out;
 }
 
-section.sceduel div#coding {
+section.scheduel div#coding {
   float: right;
+  margin-top: 80px;
+  margin-right: 50px;
 }
 
-section.sceduel div#coding ul {
+section.scheduel div#coding ul {
   text-decoration: none;
-  margin-top: 90px;
-  margin-right: 50px;
   text-align: left;
 }
 
-section.sceduel div#coding ul li {
+section.scheduel div#coding ul li {
+  margin-bottom: 5px;
   list-style: none;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 1.2em;
   color: #5e5e5e;
 }
 
@@ -531,7 +540,7 @@ section.random div#i-do {
 
 section.random div#i-do h1 {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
   color: #2e2e2e;
   margin-bottom: 30px;
 }
@@ -540,7 +549,7 @@ section.random div#i-do ul li {
   margin-bottom: 10px;
   list-style: none;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 18px;
   color: #5e5e5e;
 }
 
@@ -561,6 +570,8 @@ section.resources div img {
 }
 
 section.resources div h3 {
+  list-style: none;
+  font-weight: 400;
   font-size: 1.2em;
   margin-top: 13px;
   color: #2e2e2e;
@@ -569,9 +580,10 @@ section.resources div h3 {
 
 section.resources div p {
   margin-top: 25px;
-  font-size: 1em;
+  font-size: 14px;
   letter-spacing: 1px;
   line-height: 25px;
+  font-weight: 400;
   color: #5e5e5e;
 }
 
@@ -690,8 +702,8 @@ footer div.social-media {
 
 footer div.social-media div#facebook,
 footer div.social-media div#twitter,
-footer div.social-media div#linked-in,
-footer div.social-media div#instagram {
+footer div.social-media div#instagram,
+footer div.social-media div#linked-in {
   margin: -10px 5px;
   float: right;
   background: #FFF;
@@ -699,17 +711,15 @@ footer div.social-media div#instagram {
   height: 40px;
   border-radius: 100%;
   text-align: center;
-  padding: 5px;
-  padding-top: 4px;
   border: 1px solid #CCC;
   transition: all .2s ease-in-out;
-  padding: 8px 0;
+  line-height: 40px;
 }
 
 footer div.social-media div#facebook i,
 footer div.social-media div#twitter i,
-footer div.social-media div#linked-in i,
-footer div.social-media div#instagram i {
+footer div.social-media div#instagram i,
+footer div.social-media div#linked-in i {
   font-size: 1.4em;
   transition: .1s ease-in-out;
   color: #2e2e2e;

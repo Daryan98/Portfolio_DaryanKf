@@ -44,7 +44,6 @@ section.about-me {
     // box-shadow: none;
     border-bottom: none;
     padding: 0;
-
     .row {
         div#about-content {
             p {
@@ -52,6 +51,9 @@ section.about-me {
                 margin-bottom: 0 !important;
                 &#phone-num {
                     margin-top: 15px !important;
+                }
+                span#or {
+                    color: $primary-color;
                 }
             }
             div.contact-social-media {
@@ -68,7 +70,6 @@ section.about-me {
                         display: inline;
                         float: left;
                         text-align: center;
-                        padding-top: 13px;
                         margin-right: 12px;
                         opacity: .8;
                         transition: opacity .2s;
@@ -80,6 +81,7 @@ section.about-me {
                             text-decoration: none;
                             i {
                                 font-size: 2em;
+                                line-height: 60px;
                             }
                         }
                         &#facebook {
@@ -92,7 +94,6 @@ section.about-me {
                             background-color: #bc2a8d;
                         }
                         &#linked-in {
-                            padding-top: 13px;
                             background-color: #007bb6;
                         }
                     }
@@ -107,7 +108,6 @@ section.send-message {
     width: 100%;
     height: 500px;
     background-color: rgb(235, 235, 235);
-
     h1 {
         text-align: center;
         color: #a8a8a8;
@@ -133,27 +133,26 @@ section.send-message {
                 box-shadow: 0 0px 2px rgba($primary-color, 1)!important;
             }
         }
-        .submit{
+        .submit {
             padding: 10px;
-          #input-submit {
-            color: white;
-            background: $primary-color;
-            cursor: pointer;
-            // margin-top: 20px;
-            &:hover {
-                box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+            #input-submit {
+                color: white;
+                background: $primary-color;
+                cursor: pointer; // margin-top: 20px;
+                &:hover {
+                    box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+                }
             }
-        }  
         }
-        
         textarea {
             width: 100%;
             height: 200px;
-            margin-bottom: 8px;;
+            margin-bottom: 8px;
+            ;
         }
     }
     .right {
-        padding: 10px;        
+        padding: 10px;
         width: 50%;
         display: inline;
         float: left;
@@ -165,34 +164,23 @@ section.send-message {
         float: left;
         margin: 0;
     }
-//     // /* Clearfix */
-//     // .cf:before,
-//     // .cf:after {
-//     //     content: " ";
-//     //     /* 1 */
-//     //     display: table;
-//     //     /* 2 */
-//     // }
-//     // .cf:after {
-//     //     clear: both;
-//     }
+    //     // /* Clearfix */
+    //     // .cf:before,
+    //     // .cf:after {
+    //     //     content: " ";
+    //     //     /* 1 */
+    //     //     display: table;
+    //     //     /* 2 */
+    //     // }
+    //     // .cf:after {
+    //     //     clear: both;
+    //     }
 }
-
 
 section.map {
     padding: 20px;
-    div{
-        position: relative;
-        h3{
-        color: $primary-color;
-        position: absolute;
-        left: 20px;
-        top: 60px;
-    }
-    }
-    
 }
 
 footer {
-    box-shadow: 0px -6px 10px -6px rgba(0,0,0,0.20);
+    box-shadow: 0px -6px 10px -6px rgba(0, 0, 0, 0.20);
 }

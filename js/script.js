@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    // Scroll
+    $('div#navbar ul a').click(function () {
+        $("html, body").animate({
+            scrollTop: $($(this).attr('href')).offset().top - 0
+        }, 300);
+    });
+
+
     // Skills slider  
     $('ul#graph-skills').carouFredSel({
         responsive: true,
@@ -141,10 +149,12 @@ function myMap() {
         center: myCenter,
         zoom: 5,
         mapTypeControl: true,
-        mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU}
+        mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+        }
     };
-    
-    
+
+
     var map = new google.maps.Map(mapCanvas, mapOptions);
     var marker = new google.maps.Marker({
         position: myCenter,
@@ -153,8 +163,8 @@ function myMap() {
     marker.setMap(map);
 
     // Zoom to 20 when clicking on marker
-    google.maps.event.addListener(marker,'click',function() {
+    google.maps.event.addListener(marker, 'click', function () {
         map.setZoom(15);
         map.setCenter(marker.getPosition());
-      });
+    });
 }
