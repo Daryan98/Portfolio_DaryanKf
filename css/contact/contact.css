@@ -24,7 +24,7 @@ header div#contact ul.active li {
 }
 
 header div#contact ul.active div {
-  background: #ffa000;
+  background: #1FAB89;
   display: inline;
   float: right;
   right: -2px;
@@ -48,7 +48,7 @@ section.about-me .row div#about-content p#phone-num {
 }
 
 section.about-me .row div#about-content p span#or {
-  color: #ffa000;
+  color: #1FAB89;
 }
 
 section.about-me .row div#about-content div.contact-social-media {
@@ -139,7 +139,7 @@ section.send-message form textarea {
 
 section.send-message form input:focus,
 section.send-message form textarea:focus {
-  box-shadow: 0 0px 2px #ffa000 !important;
+  box-shadow: 0 0px 2px #1fab89 !important;
 }
 
 section.send-message form .submit {
@@ -148,7 +148,7 @@ section.send-message form .submit {
 
 section.send-message form .submit #input-submit {
   color: white;
-  background: #ffa000;
+  background: #1FAB89;
   cursor: pointer;
 }
 

@@ -51,7 +51,6 @@ $(document).ready(function () {
     $(window).scroll(function () {
         // Animate the codeing designing img
         if ($(window).scrollTop() >= 500) {
-
             $('#circle-graph img').css({
                 // "display": "block",
                 "transform": "translateY(0)",
@@ -61,7 +60,6 @@ $(document).ready(function () {
 
         // Animate the skills section li
         if ($(window).scrollTop() >= 1100) {
-
             $('ul#graph-skills li#html').css({
                 // "display": "block",
                 "height": "450px",
