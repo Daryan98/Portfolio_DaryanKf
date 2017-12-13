@@ -3,13 +3,13 @@ $secondary-color:rgb(245, 245, 245);
 $text-color: #5e5e5e;
 $text-color-darker:#2e2e2e;
 $icon-color: #2e2e2e;
-$hr: rgb(224, 224, 224);
+$hr: rgb(241, 241, 241);
 $html: #ff9e2c;
 $gray: #999;
 $grayLight: lighten($gray, 20%);
 $wordpress: #4ecdc4;
 $css: #f56666;
-$js: #87e64c;
+$js: #80db48;
 $peach: lighten($html, 20%);
 $adobe: #ab64f4;
 $python: #1ABC9C;
@@ -247,6 +247,7 @@ section.about-me {
         position: relative;
         .goal-content {
             width: 100%;
+            margin-left: 55px;
             #goal-learn {
                 width: 100%;
                 margin-bottom: 70px;
@@ -257,8 +258,8 @@ section.about-me {
                     div {
                         border-radius: 5px;
                         border: 1px solid rgb(218, 218, 218);
-                        width: 18%;
-                        padding: 10px;
+                        width: 16%;
+                        padding: 6px;
                         display: inline;
                         float: left;
                         margin: 20px 1%;
@@ -288,15 +289,10 @@ section.about-me {
 // scheduel section 
 section.scheduel {
     background: rgb(248, 248, 248);
-    width: 100%; // border-bottom: 1px solid $hr;
+    width: 100%; 
+    border-bottom: 1px solid $hr;
     padding: 80px 0;
-    @include shadow(); // h1 {
-    //     display: inline-block;
-    //     width: 100%;
-    //     text-align: center;
-    //     margin-top: 80px;
-    //     margin-bottom: 50px;
-    // }
+    @include shadow(); 
     div#design {
         float: left;
         margin-top: 80px;
@@ -346,10 +342,10 @@ section.scheduel {
 section.skills {
     width: 100%;
     height: 589px;
-    border-bottom: 1.5px solid rgb(219, 219, 219);
+    border-bottom: 1.5px solid $hr;
     margin: 0;
     padding: 0;
-    @include shadow();
+    // @include shadow();
     .skills {
         h1 {
             display: inline-block;
@@ -390,6 +386,7 @@ section.skills {
             background-image: url("./img/shape-hr.png");
             img {
                 width: 100%;
+                opacity: .3;
             }
         }
         div#graphs {

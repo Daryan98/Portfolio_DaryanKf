@@ -64,6 +64,7 @@ $(document).ready(function () {
                 // "display": "block",
                 "height": "450px",
                 "margin-top": "0px",
+                // "margin-bottom": "-110px",
                 // "opacity": "1",
             });
 
@@ -92,8 +93,8 @@ $(document).ready(function () {
 
             $('ul#graph-skills li#adobe').css({
                 "transition-delay": ".4s",
-                "height": "245px",
-                "margin-top": "175px",
+                "height": "275px",
+                "margin-top": "145px",
                 // "opacity": "1",
             });
             $('ul#graph-skills li#python').css({
@@ -113,8 +114,8 @@ $(document).ready(function () {
 
             $('ul#graph-skills li#git').css({
                 "transition-delay": ".7s",
-                "height": "140px",
-                "margin-top": "280px",
+                "height": "145px",
+                "margin-top": "275px",
                 // "opacity": "1",
             });
         }
