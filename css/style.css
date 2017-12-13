@@ -170,7 +170,6 @@ header nav div#contact ul div {
   background-color: #1FAB89;
   display: inline;
   float: right;
-  right: -2px;
   transition: all .3s ease-out;
 }
 
