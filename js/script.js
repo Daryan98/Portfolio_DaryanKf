@@ -61,7 +61,7 @@ $(document).ready(function () {
         // Animate the skills section li
         if ($(window).scrollTop() >= 1650) {
 
-            $('ul#graph-skills li#html ').css({
+            $('ul#graph-skills li#html').css({
                 "height": "420px",
                 "margin-top": "0px",
                 //  "opacity": "1",
