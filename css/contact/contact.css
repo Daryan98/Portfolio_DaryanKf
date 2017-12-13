@@ -24,13 +24,22 @@ header div#contact ul.active li {
 }
 
 header div#contact ul.active div {
+  border-radius: 4px;
+}
+
+header div#contact ul.active li {
+  margin-right: 35px;
+}
+
+header div#contact ul.active div {
   background-color: #1FAB89;
   display: inline;
   float: right;
   right: -2px;
-  width: 150px;
-  height: 50px;
-  margin-top: 5px;
+  width: 140px;
+  height: 44px;
+  margin-top: 8px;
+  border-radius: 4px;
   transition: all .3s ease-out;
 }
 

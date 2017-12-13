@@ -16,14 +16,14 @@
   top: 80%;
   width: 50px;
   height: 40px;
-  background: #ebebeb;
+  background: whitesmoke;
   padding: 0 15px;
   border-radius: 20px 0 0 20px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 #scroll-top a i {
-  color: #2e2e2e;
+  color: #383838;
   font-size: 1.3em;
   line-height: 40px;
   transition: all .2s ease;
@@ -124,9 +124,14 @@ header nav div#contact ul {
 }
 
 header nav div#contact ul:hover div {
-  width: 150px;
-  height: 50px;
-  margin-top: 5px;
+  width: 140px;
+  height: 44px;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+header nav div#contact ul:hover li {
+  margin-right: 35px;
 }
 
 header nav div#contact ul:hover li a {
@@ -144,11 +149,12 @@ header nav div#contact ul li {
   font-weight: bold;
   cursor: pointer;
   padding-right: 20px;
-  margin-right: 40px;
+  margin-right: 50px;
   position: absolute;
   top: 0px;
   right: 25px;
   z-index: 2;
+  transition: all .5s ease-in-out;
 }
 
 header nav div#contact ul li a {
@@ -169,12 +175,8 @@ header nav div#contact ul div {
 }
 
 section.about-me {
-  margin-top: 80px;
   width: 100%;
-  margin-bottom: 0;
-  padding: 0;
-  padding-bottom: 15px;
-  box-shadow: 0px 4px 14px -6px rgba(0, 0, 0, 0.1);
+  padding: 80px 0;
 }
 
 section.about-me .first-row,
@@ -202,7 +204,7 @@ section.about-me .first-row div#about-content h1,
 section.about-me .row div#about-content h1 {
   font-weight: 600;
   font-size: 3.5em;
-  color: #2e2e2e;
+  color: #333333;
   margin-bottom: 0;
 }
 
@@ -210,13 +212,15 @@ section.about-me .first-row div#about-content h4,
 section.about-me .row div#about-content h4 {
   font-weight: 300;
   letter-spacing: 1px;
-  margin: 25px 0;
+  margin: 25px 0 30px;
   word-spacing: 1px;
-  color: #5e5e5e;
+  color: #333333;
+  line-height: 32px;
 }
 
 section.about-me .first-row div#about-content p,
 section.about-me .row div#about-content p {
+  line-height: 25px;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: .5px;
@@ -249,12 +253,10 @@ section.about-me .goal-row {
 
 section.about-me .goal-row .goal-content {
   width: 100%;
-  margin-left: 55px;
 }
 
 section.about-me .goal-row .goal-content #goal-learn {
   width: 100%;
-  margin-bottom: 70px;
   height: 150px;
 }
 
@@ -266,12 +268,17 @@ section.about-me .goal-row .goal-content #goal-learn div#goal-slider {
 section.about-me .goal-row .goal-content #goal-learn div#goal-slider div {
   border-radius: 5px;
   border: 1px solid #dadada;
-  width: 16%;
+  width: 15%;
   padding: 6px;
   display: inline;
   float: left;
-  margin: 20px 1%;
-  box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  margin-right: 2%;
+  box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
+}
+
+section.about-me .goal-row .goal-content #goal-learn div#goal-slider div:nth-child(6) {
+  margin-right: 0;
 }
 
 section.about-me .goal-row .goal-content #goal-learn div#goal-slider div img {
@@ -291,16 +298,16 @@ section.about-me .goal-row .goal-content #goal-learn div#goal-slider div img:hov
 }
 
 section.scheduel {
-  background: #f8f8f8;
+  background: whitesmoke;
   width: 100%;
   border-bottom: 1px solid #f1f1f1;
   padding: 80px 0;
-  box-shadow: 0px 4px 14px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
 }
 
 section.scheduel div#design {
   float: left;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: 50px;
 }
 
@@ -316,6 +323,13 @@ section.scheduel div#design ul li {
   color: #5e5e5e;
 }
 
+section.scheduel div#design ul li:nth-child(1) {
+  color: #333333;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
 section.scheduel div#circle-graph {
   margin: 0 auto;
   justify-content: center;
@@ -323,7 +337,7 @@ section.scheduel div#circle-graph {
 
 section.scheduel div#circle-graph img {
   margin: 0 auto;
-  width: 350px;
+  width: 330px;
   margin-left: 18%;
   transform: translateY(100px);
   opacity: 0;
@@ -332,7 +346,7 @@ section.scheduel div#circle-graph img {
 
 section.scheduel div#coding {
   float: right;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-right: 50px;
 }
 
@@ -349,19 +363,63 @@ section.scheduel div#coding ul li {
   color: #5e5e5e;
 }
 
+section.scheduel div#coding ul li:nth-child(1) {
+  color: #333333;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+section.random {
+  padding: 130px 0 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+section.random div#yoda-pic {
+  margin-left: 100px;
+}
+
+section.random div#i-do {
+  margin-top: 40px;
+  margin-left: 160px;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all .5s ease-out;
+}
+
+section.random div#i-do h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 30px;
+  font-size: 1.4em;
+}
+
+section.random div#i-do ul li {
+  margin-bottom: 10px;
+  list-style: none;
+  font-weight: 300;
+  font-size: 18px;
+  color: #5e5e5e;
+}
+
 section.skills {
   width: 100%;
   height: 589px;
   border-bottom: 1.5px solid #f1f1f1;
   margin: 0;
   padding: 0;
+  background: whitesmoke;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
 }
 
 section.skills .skills h1 {
+  font-size: 2em;
+  font-weight: 400;
   display: inline-block;
   width: 100%;
   text-align: right;
-  margin-top: 100px;
+  margin-top: 107px;
   margin-bottom: -5px;
 }
 
@@ -443,27 +501,27 @@ section.skills .skills div#graphs ul li p {
   text-align: center;
 }
 
-section.skills .skills div#graphs ul li p#procent {
+section.skills .skills div#graphs ul li p.procent {
   font-size: 3em;
   font-weight: bold;
   vertical-align: bottom;
   position: absolute;
   bottom: 80px;
-  color: #FFF;
+  color: whitesmoke;
   opacity: .5;
 }
 
-section.skills .skills div#graphs ul li p#procent span {
+section.skills .skills div#graphs ul li p.procent span {
   font-size: .4em;
   margin-left: -10px;
 }
 
-section.skills .skills div#graphs ul li p#name {
+section.skills .skills div#graphs ul li p.name {
   vertical-align: bottom;
   position: absolute;
   bottom: 10px;
   letter-spacing: 1px;
-  color: #FFF;
+  color: whitesmoke;
   font-weight: 600;
 }
 
@@ -473,28 +531,6 @@ section.skills .skills div#graphs ul #html {
   background: #ff9e2c;
   border: 1px solid #ff9e2c;
   background-image: linear-gradient(#ffcd92, #ff9e2c 70%);
-}
-
-section.skills .skills div#graphs ul #html p#procent {
-  font-size: 3em;
-  font-weight: bold;
-  vertical-align: bottom;
-  position: absolute;
-  bottom: 110px;
-  opacity: .5;
-}
-
-section.skills .skills div#graphs ul #html p#procent span {
-  font-size: .4em;
-  margin-left: -10px;
-}
-
-section.skills .skills div#graphs ul #html p#name {
-  vertical-align: bottom;
-  position: absolute;
-  bottom: 40px;
-  letter-spacing: 1px;
-  font-weight: 600;
 }
 
 section.skills .skills div#graphs ul #css {
@@ -553,45 +589,27 @@ section.skills .skills div#graphs ul #git {
   background-image: linear-gradient(#f0b37e, #E67E22 70%);
 }
 
-section.random {
-  padding: 130px 0 0;
-  border-bottom: 1px solid #f1f1f1;
-}
-
-section.random div#yoda-pic {
-  margin-left: 100px;
-}
-
-section.random div#i-do {
-  margin-top: 40px;
-  margin-left: 160px;
-  opacity: 0;
-  transform: translateX(200px);
-  transition: all .5s ease-out;
-}
-
-section.random div#i-do h1 {
-  font-size: 1.5em;
-  font-weight: 400;
-  color: #2e2e2e;
-  margin-bottom: 30px;
-}
-
-section.random div#i-do ul li {
-  margin-bottom: 10px;
-  list-style: none;
-  font-weight: 300;
-  font-size: 18px;
-  color: #5e5e5e;
-}
-
 section.resources {
   padding-top: 100px;
   border-bottom: 1px solid #f1f1f1;
 }
 
+section.resources h1 {
+  font-weight: 400;
+  font-size: 1.8em;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section.resources h1 span {
+  color: #5e5e5e;
+  font-size: .9em;
+}
+
 section.resources div {
   margin-bottom: 50px;
+  padding: 0 15px;
 }
 
 section.resources div img {
@@ -606,8 +624,16 @@ section.resources div h3 {
   font-weight: 400;
   font-size: 1.2em;
   margin-top: 13px;
-  color: #2e2e2e;
+  color: #333333;
   letter-spacing: 1px;
+}
+
+section.resources div a {
+  text-decoration: none;
+}
+
+section.resources div a h3:hover {
+  color: #1FAB89;
 }
 
 section.resources div p {
@@ -646,7 +672,8 @@ section.project div#photos div#pic img {
   height: auto !important;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #dfdfdf;
+  border: 1px solid whitesmoke;
+  box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
   display: inline;
 }
 
@@ -708,12 +735,13 @@ footer {
   height: 80px;
   background: #f7f7f7;
   padding: 30px;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
 }
 
 footer p#creater {
   width: 30%;
   display: inline;
-  color: #2e2e2e;
+  color: #333333;
 }
 
 footer p#like-dev {
@@ -725,7 +753,7 @@ footer p#like-dev {
 footer p#like-dev span {
   display: block;
   font-weight: 600;
-  color: #2e2e2e;
+  color: #333333;
 }
 
 footer div.social-media {
@@ -754,7 +782,7 @@ footer div.social-media ul li a {
 footer div.social-media ul li a i {
   font-size: 1.3em;
   transition: .1s ease-in-out;
-  color: #2e2e2e;
+  color: #383838;
 }
 
 footer div.social-media ul li#facebook:hover {

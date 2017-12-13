@@ -59,13 +59,12 @@ $(document).ready(function () {
         }
 
         // Animate the skills section li
-        if ($(window).scrollTop() >= 1100) {
-            $('ul#graph-skills li#html').css({
-                // "display": "block",
-                "height": "450px",
+        if ($(window).scrollTop() >= 1650) {
+
+            $('ul#graph-skills li#html ').css({
+                "height": "420px",
                 "margin-top": "0px",
-                // "margin-bottom": "-110px",
-                // "opacity": "1",
+                //  "opacity": "1",
             });
 
             $('ul#graph-skills li#css').css({
@@ -86,8 +85,8 @@ $(document).ready(function () {
 
             $('ul#graph-skills li#wordpress').css({
                 "transition-delay": ".3s",
-                "height": "180px",
-                "margin-top": "240px",
+                "height": "200px",
+                "margin-top": "220px",
                 // "opacity": "1",
             });
 
@@ -107,20 +106,20 @@ $(document).ready(function () {
 
             $('ul#graph-skills li#php-mysqul').css({
                 "transition-delay": ".6s",
-                "height": "190px",
-                "margin-top": "230px",
+                "height": "160px",
+                "margin-top": "261px",
                 // "opacity": "1",
             });
 
             $('ul#graph-skills li#git').css({
                 "transition-delay": ".7s",
-                "height": "145px",
-                "margin-top": "275px",
+                "height": "140px",
+                "margin-top": "280px",
                 // "opacity": "1",
             });
         }
 
-        if ($(window).scrollTop() >= 1650) {
+        if ($(window).scrollTop() >= 1100) {
             $("section.random #i-do").css({
                 "opacity": "1",
                 "transform": "translateX(0)",

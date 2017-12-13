@@ -1,8 +1,9 @@
 $primary-color: #1FAB89;
-$secondary-color:rgb(245, 245, 245);
+$secondary-color:rgb(248, 248, 248);
 $text-color: #5e5e5e;
-$text-color-darker:#2e2e2e;
-$icon-color: #2e2e2e;
+$text-color-darker:#333333;
+$icon-color: #383838;
+$background: rgb(245, 245, 245);
 $hr: rgb(241, 241, 241);
 $html: #ff9e2c;
 $gray: #999;
@@ -16,7 +17,7 @@ $python: #1ABC9C;
 $php-mysqul:#3498DB;
 $git: #E67E22;
 @mixin shadow {
-    box-shadow: 0px 4px 14px -6px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.15);
 }
 
 * {
@@ -28,17 +29,17 @@ $git: #E67E22;
 
 #scroll-top {
     position: absolute;
-  z-index: 3;
+    z-index: 3;
     a {
         position: fixed;
         right: 0;
         top: 80%;
         width: 50px;
         height: 40px;
-        background: rgb(235, 235, 235);
+        background: $background;
         padding: 0 15px;
         border-radius: 20px 0 0 20px;
-        box-shadow: 0 0 5px 0 rgba( #000000,  .5);
+        box-shadow: 0 0 5px 0 rgba( #000000, .5);
         i {
             color: $icon-color;
             font-size: 1.3em;
@@ -48,9 +49,8 @@ $git: #E67E22;
                 display: inline-block;
                 transform: rotate(-45deg);
             }
-            
         }
-        &:hover{
+        &:hover {
             i.rotate {
                 display: inline-block;
                 transform: rotate(45deg);
@@ -68,7 +68,7 @@ body {
 header {
     width: 100%;
     height: 80px;
-    @include shadow;
+    box-shadow: 0px 4px 14px -6px rgba(0, 0, 0, 0.10);
     nav {
         div#logo {
             width: 20%;
@@ -136,11 +136,13 @@ header {
                 line-height: 80px;
                 &:hover {
                     div {
-                        width: 150px;
-                        height: 50px;
-                        margin-top: 5px;
+                        width: 140px;
+                        height: 44px;
+                        margin-top: 8px;
+                        border-radius: 4px;
                     }
                     li {
+                        margin-right: 35px;
                         a {
                             color: #FFF;
                         }
@@ -157,11 +159,12 @@ header {
                     font-weight: bold;
                     cursor: pointer;
                     padding-right: 20px;
-                    margin-right: 40px;
+                    margin-right: 50px;
                     position: absolute;
                     top: 0px;
                     right: 25px;
                     z-index: 2;
+                    transition: all .5s ease-in-out;
                     a {
                         color: $primary-color;
                         text-decoration: none;
@@ -185,12 +188,8 @@ header {
 
 // About me section 
 section.about-me {
-    margin-top: 80px;
     width: 100%;
-    margin-bottom: 0;
-    padding: 0;
-    padding-bottom: 15px;
-    @include shadow();
+    padding: 80px 0;
     .first-row,
     .row {
         width: 100%;
@@ -214,11 +213,13 @@ section.about-me {
             h4 {
                 font-weight: 300;
                 letter-spacing: 1px;
-                margin: 25px 0;
+                margin: 25px 0 30px;
                 word-spacing: 1px;
-                color: $text-color;
+                color: $text-color-darker;
+                line-height: 32px;
             }
             p {
+                line-height: 25px;
                 font-size: 14px;
                 font-weight: 400;
                 letter-spacing: .5px;
@@ -247,10 +248,9 @@ section.about-me {
         position: relative;
         .goal-content {
             width: 100%;
-            margin-left: 55px;
             #goal-learn {
                 width: 100%;
-                margin-bottom: 70px;
+                // margin-bottom: 70px;
                 height: 150px;
                 div#goal-slider {
                     width: 100%;
@@ -258,12 +258,16 @@ section.about-me {
                     div {
                         border-radius: 5px;
                         border: 1px solid rgb(218, 218, 218);
-                        width: 16%;
+                        width: 15%;
                         padding: 6px;
                         display: inline;
                         float: left;
-                        margin: 20px 1%;
-                        box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.10);
+                        margin: 20px 0;
+                        margin-right: 2%;
+                        box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
+                        &:nth-child(6){
+                            margin-right: 0;
+                        }
                         img {
                             text-align: center;
                             list-style: none;
@@ -288,14 +292,14 @@ section.about-me {
 
 // scheduel section 
 section.scheduel {
-    background: rgb(248, 248, 248);
-    width: 100%; 
+    background: $background;
+    width: 100%;
     border-bottom: 1px solid $hr;
     padding: 80px 0;
-    @include shadow(); 
+    @include shadow();
     div#design {
         float: left;
-        margin-top: 80px;
+        margin-top: 50px;
         margin-left: 50px;
         ul {
             text-decoration: none;
@@ -305,6 +309,12 @@ section.scheduel {
                 font-weight: 300;
                 font-size: 1.2em;
                 color: $text-color;
+                &:nth-child(1) {
+                    color: $text-color-darker;
+                    font-size: 1.4em;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                }
             }
         }
     }
@@ -313,7 +323,7 @@ section.scheduel {
         justify-content: center;
         img {
             margin: 0 auto;
-            width: 350px;
+            width: 330px;
             margin-left: 18%;
             transform: translateY(100px);
             opacity: 0;
@@ -322,7 +332,7 @@ section.scheduel {
     }
     div#coding {
         float: right;
-        margin-top: 80px;
+        margin-top: 50px;
         margin-right: 50px;
         ul {
             text-decoration: none;
@@ -332,6 +342,45 @@ section.scheduel {
                 list-style: none;
                 font-weight: 300;
                 font-size: 1.2em;
+                color: $text-color;
+                &:nth-child(1) {
+                    color: $text-color-darker;
+                    font-size: 1.4em;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+// Random section 
+section.random {
+    padding: 130px 0 0;
+    border-bottom: 1px solid $hr;    
+     
+    div#yoda-pic {
+        margin-left: 100px;
+    }
+    div#i-do {
+        margin-top: 40px;
+        margin-left: 160px;
+        opacity: 0;
+        transform: translateX(200px);
+        transition: all .5s ease-out;
+        h1 {
+            font-size: 1.5em;
+            font-weight: 400;
+            color: $text-color-darker;
+            margin-bottom: 30px;
+            font-size: 1.4em;
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+                list-style: none;
+                font-weight: 300;
+                font-size: 18px;
                 color: $text-color;
             }
         }
@@ -344,14 +393,18 @@ section.skills {
     height: 589px;
     border-bottom: 1.5px solid $hr;
     margin: 0;
-    padding: 0;
-    // @include shadow();
+    padding: 0; // @include shadow();
+    background: $background;
+    @include shadow();
+    
     .skills {
         h1 {
+            font-size: 2em;
+            font-weight: 400;
             display: inline-block;
             width: 100%;
             text-align: right;
-            margin-top: 100px;
+            margin-top: 107px;
             margin-bottom: -5px;
         }
         div#labels {
@@ -419,26 +472,28 @@ section.skills {
                         width: 80%;
                         margin: 0 auto;
                         text-align: center;
+                        
+                        
                     }
-                    p#procent {
+                    p.procent {
                         font-size: 3em;
                         font-weight: bold;
                         vertical-align: bottom;
                         position: absolute;
                         bottom: 80px;
-                        color: #FFF;
+                        color: $background;
                         opacity: .5;
                         span {
                             font-size: .4em;
                             margin-left: -10px;
                         }
                     }
-                    p#name {
+                    p.name {
                         vertical-align: bottom;
                         position: absolute;
                         bottom: 10px;
                         letter-spacing: 1px;
-                        color: #FFF;
+                        color: $background;
                         font-weight: 600;
                     }
                 }
@@ -448,31 +503,7 @@ section.skills {
                     background: $html;
                     border: 1px solid $html;
                     background-image: (linear-gradient(lighten($html, 20%), $html 70%));
-                    p {
-                        // margin-bottom: 0;
-                        // width: 80%;
-                        // margin: 0 auto;
-                        // text-align: center;
-                    }
-                    p#procent {
-                        font-size: 3em;
-                        font-weight: bold;
-                        vertical-align: bottom;
-                        position: absolute;
-                        bottom: 110px;
-                        opacity: .5;
-                        span {
-                            font-size: .4em;
-                            margin-left: -10px;
-                        }
-                    }
-                    p#name {
-                        vertical-align: bottom;
-                        position: absolute;
-                        bottom: 40px;
-                        letter-spacing: 1px;
-                        font-weight: 600;
-                    }
+                   
                 }
                 #css {
                     border-top: 1px solid $css;
@@ -528,43 +559,26 @@ section.skills {
     }
 }
 
-// Random section 
-section.random {
-    padding: 130px 0 0;
-    border-bottom: 1px solid $hr;
-    div#yoda-pic {
-        margin-left: 100px;
-    }
-    div#i-do {
-        margin-top: 40px;
-        margin-left: 160px;
-        opacity: 0;
-        transform: translateX(200px);
-        transition: all .5s ease-out;
-        h1 {
-            font-size: 1.5em;
-            font-weight: 400;
-            color: $text-color-darker;
-            margin-bottom: 30px;
-        }
-        ul {
-            li {
-                margin-bottom: 10px;
-                list-style: none;
-                font-weight: 300;
-                font-size: 18px;
-                color: $text-color;
-            }
-        }
-    }
-}
+
 
 // reasourses that i have used section 
 section.resources {
     padding-top: 100px;
     border-bottom: 1px solid $hr;
+    h1 {
+        font-weight: 400;
+        font-size: 1.8em;
+        color: $text-color-darker;
+        text-align: center;
+        margin-bottom: 50px;
+        span{
+            color: $text-color;
+            font-size: .9em;
+        }
+    }
     div {
         margin-bottom: 50px;
+        padding: 0 15px;
         img {
             width: 50px;
             display: inline;
@@ -578,6 +592,12 @@ section.resources {
             margin-top: 13px;
             color: $text-color-darker;
             letter-spacing: 1px;
+        }
+        a {
+            text-decoration: none;
+            h3:hover{
+            color: $primary-color;
+            }
         }
         p {
             margin-top: 25px;
@@ -611,8 +631,9 @@ section.project {
                 width: 100% !important;
                 height: auto !important;
                 padding: 10px;
-                border-radius: 5px; // box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.25);
-                border: 1px solid rgb(223, 223, 223);
+                border-radius: 5px; 
+                border: 1px solid $background;
+                box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
                 display: inline;
             }
             .about-website {
@@ -670,6 +691,7 @@ footer {
     height: 80px;
     background: rgb(247, 247, 247);
     padding: 30px;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
     p#creater {
         width: 30%;
         display: inline;
