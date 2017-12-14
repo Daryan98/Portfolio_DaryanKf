@@ -43,6 +43,7 @@ div#scroll-top a:hover i.rotate {
 header {
   height: 70px;
   width: 100%;
+  position: relative;
   z-index: 1;
   top: 0;
   left: 0;
