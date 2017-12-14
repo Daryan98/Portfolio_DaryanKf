@@ -14,6 +14,30 @@ $(document).ready(function () {
         }, 150);
     });
 
+    // Small Device Nav
+
+
+    $("header nav#navbar .menu-bar-open").click(function () {
+        if ($("header").height() != 70)
+            $("header").animate({
+                height: 70
+            }, 300);
+        else
+            $("header").animate({
+                height: 670
+            }, 300);
+    });
+
+
+
+
+
+
+
+
+
+
+
     // Skills slider  
     $('ul#graph-skills').carouFredSel({
         responsive: true,

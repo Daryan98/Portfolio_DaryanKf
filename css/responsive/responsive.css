@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1280px) {
+  header nav div#contact ul li {
+    font-size: .9em;
+  }
+  width: 100%;
+  div#contact ul li {
+    margin-left: -50px;
+    font-size: .9em;
+  }
+  section.project div#photos {
+    width: 100%;
+    /* Prevent vertical gaps */
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    position: fixed;
+  }
+  header nav#navbar .menu-bar-open {
+    display: block;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  header nav#navbar div#contact {
+    display: none;
+  }
+  header nav#navbar div#nav ul {
+    margin-top: 100px;
+  }
+  header nav#navbar div#nav ul li {
+    display: block;
+    font-size: 1.2em;
+  }
+  header nav#navbar div#nav ul li:last-child {
+    display: block;
+  }
+  section.project div#photos {
+    width: 100%;
+    /* Prevent vertical gaps */
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+  }
+}
+ 
+
+ /*# sourceMappingURL= responsive.css.map */

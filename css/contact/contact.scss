@@ -10,45 +10,11 @@ $hr: rgb(224, 224, 224);
     box-sizing: border-box;
 }
 
-header div#contact {
-    width: 20%;
-    height: 60px;
-    display: inline;
-    float: right;
-    padding: 10px 0;
-    position: relative;
-    ul.active {
-        text-decoration: none;
-        text-align: right; 
-        line-height: 80px;
-        li {
-            color: #FFF;
-        }
-        div {
-            border-radius: 4px;
-        }
-        li {
-            margin-right: 35px;
-        }
-        div {
-            background-color: $primary-color;
-            display: inline;
-            float: right;
-            right: -2px;
-            width: 140px;
-            height: 44px;
-            margin-top: 8px;
-            border-radius: 4px;
-            transition: all .3s ease-out;
-           
-        }
-    }
-}
 
 section.about-me {
     // box-shadow: none;
     border-bottom: none;
-    padding: 0;
+    padding-bottom: 0;
     .row {
         div#about-content {
             p {

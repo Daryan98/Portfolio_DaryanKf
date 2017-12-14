@@ -41,136 +41,141 @@
 }
 
 header {
+  height: 70px;
   width: 100%;
-  height: 80px;
-  box-shadow: 0px 4px 14px -6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  overflow-y: hidden;
+  transition: 0.5s;
+  padding: 0;
+  overflow: hidden;
+  transition: all .3s ease-out;
 }
 
-header nav div#logo {
-  width: 20%;
+header nav#navbar {
+  width: 100%;
+  height: 70px;
+  padding: 0;
+  top: 0;
+}
+
+header nav#navbar div#logo {
+  width: 10%;
+  height: 100%;
   display: inline;
   float: left;
 }
 
-header nav div#logo img {
-  width: 65px;
-  margin: 20px 50px;
+header nav#navbar div#logo img {
+  width: 60px;
+  margin: 15px 50px;
 }
 
-header nav div#navbar {
-  width: 60%;
+header nav#navbar div#nav {
+  width: 80%;
   display: inline;
   float: left;
+  margin: 0;
+  height: 100%;
 }
 
-header nav div#navbar ul {
-  text-decoration: none;
+header nav#navbar div#nav ul {
+  width: 100%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
 }
 
-header nav div#navbar ul a {
-  display: inline;
-  text-decoration: none;
-  text-align: center;
-}
-
-header nav div#navbar ul li {
-  text-align: center;
+header nav#navbar div#nav ul li {
   list-style: none;
-  display: inline-block;
-  margin: 0px 5px;
-  font-size: .9em;
-  font-weight: bold;
-  font-family: raleway;
-  letter-spacing: 1px;
-  color: #5e5e5e;
-  cursor: pointer;
-  transition: all .3s;
-}
-
-header nav div#navbar ul li:hover {
-  color: #1FAB89;
-}
-
-header nav div#navbar ul li::after {
-  content: '';
-  margin-top: -5px;
-  display: block;
-  width: 0;
-  height: 5px;
-  background: #1FAB89;
-  transition: width .3s;
-}
-
-header nav div#navbar ul li:hover::after {
-  width: 100%;
-  transition: width .3s;
-}
-
-header nav div#contact {
-  width: 20%;
-  height: 60px;
+  text-align: center;
   display: inline;
-  float: right;
-  padding: 10px 0;
+  width: 100%;
+  margin: 0 12px;
   position: relative;
 }
 
-header nav div#contact ul {
+header nav#navbar div#nav ul li a {
+  width: 100%;
+  text-align: center;
+  margin-right: 0 5px;
+  display: inline;
+  font-weight: 500;
   text-decoration: none;
-  text-align: right;
-  line-height: 80px;
+  font-size: .9em;
+  color: #5e5e5e;
+  transition: all .2s ease-out;
 }
 
-header nav div#contact ul:hover div {
-  width: 140px;
-  height: 44px;
-  margin-top: 8px;
-  border-radius: 4px;
+header nav#navbar div#nav ul li a:hover {
+  color: #1FAB89;
 }
 
-header nav div#contact ul:hover li {
-  margin-right: 35px;
+header nav#navbar div#nav ul li:last-child {
+  display: none;
+  font-size: 1.8em;
 }
 
-header nav div#contact ul:hover li a {
+header nav#navbar div#contact {
+  width: 10%;
+  position: absolute;
+  right: 0;
+  float: right;
+  height: 70px;
+  transition: all .3s ease-out;
+}
+
+header nav#navbar div#contact div#overlay {
+  width: 100%;
+  height: 65px;
+  margin-right: 0;
+  text-align: center;
+  line-height: 70px;
+}
+
+header nav#navbar div#contact div#overlay a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #1FAB89;
+  padding: 0;
+  transition: all .3s ease-out;
+}
+
+header nav#navbar div#contact div#overlay a:hover {
+  padding: 26px 24%;
+  background: #1FAB89;
   color: #FFF;
 }
 
-header nav div#contact ul li {
-  width: 16%;
-  list-style: none;
+header nav#navbar .menu-bar-open {
+  padding: 22px 25px;
+  width: 10%;
   display: inline;
   float: right;
-  font-size: 1em;
-  font-family: raleway;
-  letter-spacing: 1px;
-  font-weight: bold;
-  cursor: pointer;
-  padding-right: 20px;
-  margin-right: 50px;
   position: absolute;
-  top: 0px;
-  right: 25px;
-  z-index: 2;
-  transition: all .5s ease-in-out;
+  top: 0;
+  right: 0;
+  display: none;
 }
 
-header nav div#contact ul li a {
-  color: #1FAB89;
-  text-decoration: none;
-  transition: color .5s ease-in-out;
+header nav#navbar .menu-bar-open:hover .bars {
+  background-color: #383838;
 }
 
-header nav div#contact ul div {
-  width: 15px;
-  margin-top: -10px;
-  height: 80px;
-  background-color: #1FAB89;
-  display: inline;
-  float: right;
-  transition: all .3s ease-out;
+header nav#navbar .menu-bar-open .bars {
+  transition: color .1s;
+  background: #000;
+}
+
+header nav#navbar .menu-bar-open .bar1,
+header nav#navbar .menu-bar-open .bar2,
+header nav#navbar .menu-bar-open .bar3 {
+  width: 25px;
+  height: 2.5px;
+  margin: 4.5px 0;
+  transition: 0.4s;
+  border-radius: 1.5px;
 }
 
 section.about-me {

@@ -1,0 +1,82 @@
+// From 1280 to lower
+@media only screen and (max-width: 1280px) {
+    header nav div#contact ul {
+        li {
+            font-size: .9em;
+        }
+    }
+    width: 100%;
+    div#contact ul li {
+        margin-left: -50px;
+        font-size: .9em;
+    }
+    section.project div#photos {
+        width: 100%;
+        /* Prevent vertical gaps */
+        -webkit-column-count: 4;
+        -webkit-column-gap: 20px;
+        -moz-column-count: 4;
+        -moz-column-gap: 20px;
+        column-count: 4;
+        column-gap: 20px;
+    }
+}
+
+// From 1024 to lower
+@media (max-width: 1024px) {
+    header {
+        position: fixed;
+        nav#navbar {
+            .menu-bar-open {
+                display: block;
+                margin-right: 0px;
+                margin-top: 0px;
+            }
+            div#contact{
+                display: none;
+        }
+        div#nav ul {
+            margin-top: 100px;
+            li {
+                display: block;
+                font-size: 1.2em;
+                &:last-child{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+    section.project div#photos {
+        width: 100%;
+        /* Prevent vertical gaps */
+        -webkit-column-count: 4;
+        -webkit-column-gap: 20px;
+        -moz-column-count: 4;
+        -moz-column-gap: 20px;
+        column-count: 4;
+        column-gap: 20px;
+    }
+}
+
+// @media (max-width: 800px) {
+//     section.project div#photos {
+//         width: 100%;
+//         /* Prevent vertical gaps */
+//         -webkit-column-count: 2;
+//         -webkit-column-gap: 20px;
+//         -moz-column-count: 2;
+//         -moz-column-gap: 20px;
+//         column-count: 2;
+//         column-gap: 20px;
+//     }
+// }
+// @media (max-width: 400px) {
+//     section.project div#photos {
+//         width: 100%;
+//         /* Prevent vertical gaps */
+//         -webkit-column-count: 1; // -webkit-column-gap: 20px;
+//         -moz-column-count: 1; // -moz-column-gap: 20px;
+//         column-count: 1; // column-gap: 20px;
+//     }
+// }

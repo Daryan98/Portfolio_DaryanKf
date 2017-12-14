@@ -17,48 +17,64 @@
     <!-- Css/sass files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.css.map">
-    <link rel="stylesheet" href="css/lightslider.css" />
+    <!-- <link rel="stylesheet" href="css/lightslider.css"> -->
+    <link rel="stylesheet" href="css/responsive/responsive.css.map">
+    <link rel="stylesheet" href="css/responsive/responsive.css">
+
 </head>
 
 <body>
     <!-- Header -->
     <header id="header">
-        <nav>
+        <nav id="navbar">
             <div id="logo">
-                <a href="index.html">
+                <a href="">
                     <img src="img/logo.png" alt="">
                 </a>
             </div>
-            <div id="navbar">
-                <ul>
-                    <a href="#about-me" class="nav-link js-scroll-trigger">
-                        <li>ABOUT</li>
-                    </a>
-                    <a href="#scheduel" class="nav-link js-scroll-trigger">
-                        <li>SCHEDUEL</li>
-                    </a>
-                    <a href="#skills" class="nav-link js-scroll-trigger">
-                        <li>SKILLS</li>
-                    </a>
-                    <a href="#random" class="nav-link js-scroll-trigger">
-                        <li>RANDOM</li>
-                    </a>
-                    <a href="#resourses" class="nav-link js-scroll-trigger">
-                        <li>REASOURSES</li>
-                    </a>
-                    <a href="#project" class="nav-link js-scroll-trigger">
-                        <li>PROJECTS</li>
-                    </a>
+            <div id="nav">
+                <ul id="sections">
+                    <li>
+                        <a href="#about-me" class="nav-link js-scroll-trigger">About</a>
+                    </li>
+                    <li>
+                        <a href="#scheduel" class="nav-link js-scroll-trigger">Scheduel</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link js-scroll-trigger">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#random" class="nav-link js-scroll-trigger">Random</a>
+                    </li>
+                    <li>
+                        <a href="#resourses" class="nav-link js-scroll-trigger">Reasourses</a>
+                    </li>
+                    <li>
+                        <a href="#project" class="nav-link js-scroll-trigger">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#project" class="nav-link js-scroll-trigger">Contact</a>
+                    </li>
                 </ul>
+            </div>
+            <div class="menu-bar-content">
+                <div class="menu-bar-open">
+                    <div onclick="myFunction(this)">
+                        <div class="bars bar1"></div>
+                        <div class="bars bar2"></div>
+                        <div class="bars bar3"></div>
+                    </div>
+                </div>
             </div>
             <div id="contact">
-                <ul>
-                    <li>
-                        <a href="contact.html">CONTACT</a>
-                    </li>
-                    <div></div>
-                </ul>
+                <div id="overlay">
+                    <a href="contact.html">
+                        CONTACT
+                    </a>
+                </div>
+                
             </div>
+            
         </nav>
         </div>
     </header>
@@ -280,7 +296,9 @@
             <div class="row">
                 <div class="col-md-4">
                     <img src="img/res/Treehouse.png" alt="">
-                    <h3>TreeHouse</h3>
+                    <a href="https://teamtreehouse.com/hosseinkamalifar">
+                        <h3>TreeHouse</h3>
+                    </a>
                     <p>i used tree house in the first tree month i started to learn progeaming, i was a creat sourse i took
                         the web developer course in it and some of the javascript course</p>
                 </div>
