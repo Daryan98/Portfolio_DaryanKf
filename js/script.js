@@ -35,11 +35,11 @@ $(document).ready(function () {
         if ($("header").height() != 70)
             $("header").animate({
                 height: 70
-            }, 300);
+            }, 200);
         else
             $("header").animate({
-                height: 670
-            }, 300);
+                height: 700
+            }, 200);
     });
 
 
