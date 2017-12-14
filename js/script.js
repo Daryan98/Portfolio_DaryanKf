@@ -1,22 +1,36 @@
 $(document).ready(function () {
 
+    $(window).scroll(function(){
+        
+    });
+
     // Scroll when clicking the nav items
-    $('div#navbar ul a').click(function () {
+    $('header nav#navbar div#nav ul li a').click(function () {
         $("html, body").animate({
             scrollTop: $($(this).attr('href')).offset().top - 0
         }, 300);
     });
 
     // Scrool to top
-    $('div#scroll-top a').click(function () {
-        $("html, body").animate({
-            scrollTop: $($(this).attr('href')).offset().top - 0
-        }, 150);
+    $(document).ready(function(){
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 150) {
+                $('div#scroll-top').fadeIn();
+            } else {
+                $('div#scroll-top').fadeOut();
+            }
+        });
+        
+        //Click event to scroll to top
+        $('div#scroll-top').click(function(){
+            $('html, body').animate({scrollTop : 0},200);
+            return false;
+        });
+        
     });
 
-    // Small Device Nav
-
-
+    // navbar for Small Device Nav
     $("header nav#navbar .menu-bar-open").click(function () {
         if ($("header").height() != 70)
             $("header").animate({

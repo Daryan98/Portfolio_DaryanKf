@@ -5,12 +5,12 @@
   font-family: raleway;
 }
 
-#scroll-top {
+div#scroll-top {
   position: absolute;
   z-index: 3;
 }
 
-#scroll-top a {
+div#scroll-top a {
   position: fixed;
   right: 0;
   top: 80%;
@@ -22,19 +22,19 @@
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
-#scroll-top a i {
+div#scroll-top a i {
   color: #383838;
   font-size: 1.3em;
   line-height: 40px;
   transition: all .2s ease;
 }
 
-#scroll-top a i.rotate {
+div#scroll-top a i.rotate {
   display: inline-block;
   transform: rotate(-45deg);
 }
 
-#scroll-top a:hover i.rotate {
+div#scroll-top a:hover i.rotate {
   display: inline-block;
   transform: rotate(45deg);
   color: #1FAB89;
@@ -43,6 +43,7 @@
 header {
   height: 70px;
   width: 100%;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -52,6 +53,7 @@ header {
   padding: 0;
   overflow: hidden;
   transition: all .3s ease-out;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
 }
 
 header nav#navbar {
@@ -180,7 +182,7 @@ header nav#navbar .menu-bar-open .bar3 {
 
 section.about-me {
   width: 100%;
-  padding: 80px 0;
+  padding: 150px 0 80px;
 }
 
 section.about-me .first-row,

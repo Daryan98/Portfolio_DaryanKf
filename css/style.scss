@@ -27,7 +27,7 @@ $git: #E67E22;
     font-family: raleway;
 }
 
-#scroll-top {
+div#scroll-top {
     position: absolute;
     z-index: 3;
     a {
@@ -68,7 +68,7 @@ body {
 header {
     height: 70px;
     width: 100%;
-    // position: fixed;
+    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
@@ -78,6 +78,7 @@ header {
     padding: 0;
     overflow: hidden;
     transition: all .3s ease-out;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
     nav#navbar {
         // position: relative;
         width: 100%;
@@ -199,7 +200,7 @@ header {
 // About me section 
 section.about-me {
     width: 100%;
-    padding: 80px 0;
+    padding: 150px 0 80px;
     .first-row,
     .row {
         width: 100%;
