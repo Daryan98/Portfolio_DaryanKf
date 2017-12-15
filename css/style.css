@@ -765,6 +765,10 @@ footer div.social-media {
   width: 100%;
 }
 
+footer div.social-media ul {
+  width: 100%;
+}
+
 footer div.social-media ul li {
   list-style: none;
   width: 40px;

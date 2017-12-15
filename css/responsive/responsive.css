@@ -91,14 +91,14 @@
     padding: 130px 0 0;
   }
   section.random div#yoda-pic {
-    margin-left: 0px;
+    margin-left: 100px;
   }
   section.random div#yoda-pic img {
     margin-top: 30px;
     width: 450px;
   }
   section.random div#i-do {
-    margin-left: -50px;
+    margin-left: 100px;
     float: left;
   }
   section.random div#i-do h1 {
@@ -214,6 +214,34 @@
   header nav#navbar div#nav ul li:last-child {
     display: block;
   }
+  section.scheduel div#circle-graph img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    margin-left: -20px;
+    opacity: 0;
+    transition: all .5s ease-out;
+  }
+  section.random {
+    padding: 130px 0 0;
+  }
+  section.random div#yoda-pic {
+    margin-left: 100px;
+  }
+  section.random div#yoda-pic img {
+    margin-top: 30px;
+    width: 450px;
+  }
+  section.random div#i-do {
+    margin-left: 90px;
+    float: left;
+  }
+  section.random div#i-do h1 {
+    font-size: 1.3em;
+  }
+  section.random div#i-do ul li {
+    font-size: 1em;
+  }
   footer {
     padding: 23px 50px;
     background: #2c2c2c;
@@ -259,6 +287,9 @@
 }
 
 @media only screen and (max-width: 989px) {
+  header nav#navbar div#nav ul li:nth-child(4) {
+    display: none;
+  }
   section.about-me .first-row div#my-image img {
     display: block;
     margin: 0 auto;
@@ -290,6 +321,7 @@
   section.scheduel div#circle-graph img {
     display: block;
     width: 300px;
+    margin-left: 180px;
   }
   section.scheduel div#coding {
     width: 100%;
@@ -372,29 +404,16 @@
     margin-right: -10%;
   }
   footer div.social-media ul li {
-    list-style: none;
-    width: 40px;
-    height: 40px;
-    display: inline;
-    float: right;
-    margin: 0px 5px;
-    background: #FFF;
-    border-radius: 100%;
-    text-align: center;
-    border: 1px solid #CCC;
-    transition: all .2s ease-in-out;
-    line-height: 40px;
-  }
-  footer div.social-media ul li a {
-    text-decoration: none;
-  }
-  footer div.social-media ul li a i {
-    font-size: 1.3em;
-    transition: .1s ease-in-out;
+    border: 1px solid #1FAB89;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  section.scheduel div#circle-graph img {
+    width: 300px;
+    margin-left: 0px;
+    margin: 0 auto;
+  }
   section.random {
     padding: 130px 0 0;
   }
@@ -443,7 +462,7 @@
     color: #FFF;
   }
   footer {
-    padding: 23px 50px;
+    padding: 0px 50px;
     background: #2c2c2c;
   }
   footer p#creater {
@@ -454,75 +473,73 @@
   }
   footer div.social-media {
     float: none;
-  }
-  footer div.social-media ul {
-    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    padding-right: 25%;
     display: block;
-    margin-right: 30%;
-  }
-  footer div.social-media ul li {
-    list-style: none;
-    width: 40px;
-    height: 40px;
-    display: inline;
-    float: right;
-    margin: -10px 5px;
-    background: #FFF;
-    border-radius: 100%;
-    text-align: center;
-    border: 1px solid #CCC;
-    transition: all .2s ease-in-out;
-  }
-  footer div.social-media ul li a {
-    text-decoration: none;
-  }
-  footer div.social-media ul li a i {
-    font-size: 1.3em;
-    transition: .1s ease-in-out;
-  }
-}
-
-@media only screen and (max-width: 530px) {
-  header nav#navbar .menu-bar-open .bars {
-    margin-left: -50px;
-  }
-  footer div.social-media ul {
-    width: 60%;
     margin: 0 auto;
   }
-  footer div.social-media ul li {
-    list-style: none;
-    width: 35px;
-    height: 35px;
-    display: inline;
-    float: right;
-    margin: -1px 5px;
-    background: #FFF;
-    border-radius: 100%;
+  footer div.social-media ul {
+    float: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     text-align: center;
-    border: 1px solid #CCC;
-    transition: all .2s ease-in-out;
-    line-height: 35px;
-  }
-  footer div.social-media ul li a {
-    text-decoration: none;
-  }
-  footer div.social-media ul li a i {
-    font-size: 1.2em;
-    transition: .1s ease-in-out;
+    padding: 20px;
   }
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 768px) and (max-width: 690px) {
   header nav#navbar .menu-bar-open .bars {
     margin-left: -30px;
   }
 }
 
-@media only screen and (max-width: 435px) {
-  footer div.social-media ul {
-    width: 60%;
+@media only screen and (max-width: 768px) and (max-width: 530px) {
+  header nav#navbar .menu-bar-open {
+    display: inline;
     margin: 0 auto;
+  }
+  header nav#navbar .menu-bar-open .bars {
+    margin-left: -30px;
+  }
+  section.about-me .row div#about-content p {
+    margin: 0;
+    width: 100%;
+  }
+  section.scheduel div#circle-graph img {
+    width: 250px;
+    margin-left: 0px;
+    margin: 0 auto;
+  }
+  section.project {
+    display: none;
+  }
+  footer {
+    padding: 0px 50px;
+    background: #2c2c2c;
+  }
+  footer p#creater {
+    display: none;
+  }
+  footer p#like-dev {
+    display: none;
+  }
+  footer div.social-media {
+    padding-right: 18%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 435px) {
+  footer {
+    padding: 0;
+  }
+  footer div.social-media {
+    padding-right: 20%;
+  }
+  footer div.social-media ul {
+    width: 90%;
+    padding: 20px 0;
   }
   footer div.social-media ul li {
     width: 30px;
