@@ -11,7 +11,6 @@
   }
   section#contact .row div#about-content p span#or {
     display: block;
-    margin-left: 80px;
   }
   section#contact .row div#about-content div.contact-social-media ul {
     margin-top: 30px;
@@ -44,6 +43,9 @@
   }
   section.about-me .row div#about-content p#phone-num {
     margin-top: 10px !important;
+  }
+  section.about-me .row div#about-content p span#or {
+    display: none;
   }
   section.about-me .row div#about-content div.contact-social-media {
     display: none;
@@ -78,9 +80,9 @@
 
 @media only screen and (max-width: 1200px) {
   section.about-me .first-row div#my-image img {
-    margin-top: 70px;
+    margin-top: 170px;
   }
-  section.scheduel div#circle-graph img {
+  section.Schedule div#circle-graph img {
     display: block;
     margin: 0 auto;
     width: 300px;
@@ -214,7 +216,7 @@
   header nav#navbar div#nav ul li:last-child {
     display: block;
   }
-  section.scheduel div#circle-graph img {
+  section.Schedule div#circle-graph img {
     display: block;
     margin: 0 auto;
     width: 300px;
@@ -306,30 +308,30 @@
     margin: 10px 0;
     margin-right: 4%;
   }
-  section.scheduel div#design {
+  section.Schedule div#design {
     width: 100%;
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
   }
-  section.scheduel div#design ul {
+  section.Schedule div#design ul {
     text-align: center;
   }
-  section.scheduel div#circle-graph {
+  section.Schedule div#circle-graph {
     transform: rotate(75deg);
   }
-  section.scheduel div#circle-graph img {
+  section.Schedule div#circle-graph img {
     display: block;
     width: 300px;
     margin-left: 180px;
   }
-  section.scheduel div#coding {
+  section.Schedule div#coding {
     width: 100%;
     display: block;
     margin: 0 auto;
     margin-top: 55px;
   }
-  section.scheduel div#coding ul {
+  section.Schedule div#coding ul {
     text-align: center;
   }
   section.random {
@@ -339,11 +341,11 @@
     margin-left: 0px;
   }
   section.random div#yoda-pic img {
-    margin-top: 30px;
+    margin-top: 60px;
     width: 400px;
   }
   section.random div#i-do {
-    margin-left: 150px;
+    margin-left: 130px;
     float: left;
   }
   section.random div#i-do h1 {
@@ -409,7 +411,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  section.scheduel div#circle-graph img {
+  section.Schedule div#circle-graph img {
     width: 300px;
     margin-left: 0px;
     margin: 0 auto;
@@ -503,11 +505,14 @@
   header nav#navbar .menu-bar-open .bars {
     margin-left: -30px;
   }
+  header nav#navbar div#nav ul li:nth-child(6) {
+    display: none;
+  }
   section.about-me .row div#about-content p {
     margin: 0;
     width: 100%;
   }
-  section.scheduel div#circle-graph img {
+  section.Schedule div#circle-graph img {
     width: 250px;
     margin-left: 0px;
     margin: 0 auto;

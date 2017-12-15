@@ -10,26 +10,32 @@ $hr: rgb(224, 224, 224);
     padding: 0;
     box-sizing: border-box;
 }
-a.active{
-    padding: 26px 24%;
-    background: $primary-color;
-    color: #FFF;
-}
+
 // Header 
 header {
     div#contact {
-        // width: 10%;
-        // position: absolute;
-        // right: 0;
-        // float: right;
-        // height: 70px;
-        // transition: all .3s ease-out;
-        div#overlay {
-            // width: 100%;
-            // height: 65px;
-            // margin-right: 0;
-            // text-align: center;
-            // line-height: 70px;
+        width: 10%;
+        position: absolute;
+        right: 0;
+        float: right;
+        height: 70px;
+        transition: all .3s ease-out;
+        div.active {
+            width: 100%;
+            height: 73px;
+            margin-right: 0;
+            text-align: center;
+            line-height: 70px;
+            margin-top: 0px;
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                transition: all .3s ease-out;
+                    padding: 26px 24%;
+                    background: $primary-color;
+                    color: #FFF;
+                
+            }
         }
     }
     .menu-bar-open {

@@ -130,7 +130,7 @@ header nav#navbar div#contact {
 
 header nav#navbar div#contact div#overlay {
   width: 100%;
-  height: 65px;
+  height: 70px;
   margin-right: 0;
   text-align: center;
   line-height: 70px;
@@ -253,6 +253,7 @@ section.about-me .row div#my-image img {
   transform: translateX(250px);
   opacity: 0;
   transition: all .8s;
+  margin-top: 40px;
 }
 
 section.about-me .goal-row {
@@ -302,7 +303,7 @@ section.about-me .goal-row .goal-content #goal-learn div#goal-slider div img:hov
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-section.scheduel {
+section.Schedule {
   background: whitesmoke;
   width: 100%;
   border-bottom: 1px solid #f1f1f1;
@@ -310,17 +311,17 @@ section.scheduel {
   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
 }
 
-section.scheduel div#design {
+section.Schedule div#design {
   float: left;
   margin-top: 50px;
   margin-left: 50px;
 }
 
-section.scheduel div#design ul {
+section.Schedule div#design ul {
   text-decoration: none;
 }
 
-section.scheduel div#design ul li {
+section.Schedule div#design ul li {
   margin-bottom: 5px;
   list-style: none;
   font-weight: 300;
@@ -328,19 +329,19 @@ section.scheduel div#design ul li {
   color: #5e5e5e;
 }
 
-section.scheduel div#design ul li:nth-child(1) {
+section.Schedule div#design ul li:nth-child(1) {
   color: #333333;
   font-size: 1.4em;
   margin-bottom: 10px;
   font-weight: 400;
 }
 
-section.scheduel div#circle-graph {
+section.Schedule div#circle-graph {
   margin: 0 auto;
   justify-content: center;
 }
 
-section.scheduel div#circle-graph img {
+section.Schedule div#circle-graph img {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -349,18 +350,18 @@ section.scheduel div#circle-graph img {
   transition: all .5s ease-out;
 }
 
-section.scheduel div#coding {
+section.Schedule div#coding {
   float: right;
   margin-top: 50px;
   margin-right: 50px;
 }
 
-section.scheduel div#coding ul {
+section.Schedule div#coding ul {
   text-decoration: none;
   text-align: left;
 }
 
-section.scheduel div#coding ul li {
+section.Schedule div#coding ul li {
   margin-bottom: 5px;
   list-style: none;
   font-weight: 300;
@@ -368,7 +369,7 @@ section.scheduel div#coding ul li {
   color: #5e5e5e;
 }
 
-section.scheduel div#coding ul li:nth-child(1) {
+section.Schedule div#coding ul li:nth-child(1) {
   color: #333333;
   font-size: 1.4em;
   margin-bottom: 10px;
@@ -391,7 +392,7 @@ section.random div#yoda-pic img {
 section.random div#i-do {
   float: right;
   margin-top: 40px;
-  margin-left: 160px;
+  margin-right: 100px;
   opacity: 0;
   transform: translateX(200px);
   transition: all .5s ease-out;
@@ -403,6 +404,10 @@ section.random div#i-do h1 {
   color: #333333;
   margin-bottom: 30px;
   font-size: 1.4em;
+}
+
+section.random div#i-do ul {
+  width: 100%;
 }
 
 section.random div#i-do ul li {

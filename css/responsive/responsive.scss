@@ -17,7 +17,6 @@
                         }
                         span#or {
                             display: block;
-                            margin-left: 80px;
                         }
                     }
                     div.contact-social-media {
@@ -55,6 +54,10 @@
                         margin-bottom: 0 !important;
                         &#phone-num {
                             margin-top: 10px !important;
+                            
+                        }
+                        span#or {
+                            display: none;
                         }
                     }
                     div.contact-social-media {
@@ -102,12 +105,13 @@
         ///////////////////////////
         section.about-me {
             .first-row div#my-image img {
-                margin-top: 70px;
+                // width: 65%;
+                margin-top: 170px;
             }
         } //////////////////////////
-        //scheduel-section
+        //Schedule-section
         ///////////////////////////
-        section.scheduel {
+        section.Schedule {
             div#circle-graph {
                 img {
                     display: block;
@@ -264,9 +268,9 @@
                 }
             }
         } //////////////////////////
-        //scheduel-section
+        //Schedule-section
         ///////////////////////////
-        section.scheduel {
+        section.Schedule {
             div#circle-graph {
                 img {
                     display: block;
@@ -370,9 +374,9 @@
                 }
             }
         } /////////////////////////
-        //scheduel-section
+        //Schedule-section
         ///////////////////////////
-        section.scheduel {
+        section.Schedule {
             div#design {
                 width: 100%;
                 display: block;
@@ -408,12 +412,12 @@
             div#yoda-pic {
                 margin-left: 0px;
                 img {
-                    margin-top: 30px;
+                    margin-top: 60px;
                     width: 400px;
                 }
             }
             div#i-do {
-                margin-left: 150px;
+                margin-left: 130px;
                 float: left;
                 h1 {
                     font-size: 1.3em;
@@ -491,9 +495,9 @@
 
     @media only screen and (max-width: 768px) {
         /////////////////////////
-        //scheduel-section
+        //Schedule-section
         ///////////////////////////
-        section.scheduel {
+        section.Schedule {
             div#circle-graph {
                 img {
                     width: 300px;
@@ -605,14 +609,17 @@
                         margin-left: -30px;
                     }
                 }
+                div#nav ul li:nth-child(6){
+                    display: none;
+                }
             }
             section.about-me .row div#about-content p {
                 margin: 0;
                 width: 100%;
             } /////////////////////////
-            //scheduel-section
+            //Schedule-section
             ///////////////////////////
-            section.scheduel {
+            section.Schedule {
                 div#circle-graph {
                     img {
                         width: 250px;

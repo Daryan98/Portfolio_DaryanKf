@@ -31,26 +31,24 @@ $(document).ready(function () {
     });
 
     // navbar for Small Device Nav
-    $("header nav#navbar .menu-bar-open").click(function () {
+    $("header nav#navbar .menu-bar-open, header nav#navbar li ").click(function () {
         if ($("header").height() != 70)
             $("header").animate({
                 height: 70
-            }, 200);
+            }, 100);
         else
             $("header").animate({
                 height: 700
-            }, 200);
+            }, 100);
     });
 
+    $(" header nav#navbar li ").click(function () {
+        if ($("header").height() != 70)
+            $("header").animate({
+                height: 70
+            }, 100);
 
-
-
-
-
-
-
-
-
+    });
 
     // Skills slider  
     $('ul#graph-skills').carouFredSel({
