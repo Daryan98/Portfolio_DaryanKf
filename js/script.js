@@ -88,7 +88,7 @@ $(document).ready(function () {
     });
     $(window).scroll(function () {
         // Animate the codeing designing img
-        if ($(window).scrollTop() >= 500) {
+        if ($(window).scrollTop() >= 500 && $(window).scrollTop() <= 700 ||$(window).scrollTop() >= 900 ) {
             $('#circle-graph img').css({
                 // "display": "block",
                 "transform": "translateY(0)",

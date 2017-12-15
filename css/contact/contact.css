@@ -4,55 +4,13 @@
   box-sizing: border-box;
 }
 
-header {
-  height: 70px;
-  width: 100%;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: whitesmoke;
-  overflow-y: hidden;
-  transition: 0.5s;
-  padding: 0;
-  overflow: hidden;
-  transition: all .3s ease-out;
-}
-
-header nav#navbar {
-  width: 100%;
-  height: 70px;
-  padding: 0;
-  top: 0;
-}
-
-header nav#navbar div#contact.active {
-  width: 10%;
-  position: absolute;
-  right: 0;
-  float: right;
-  height: 70px;
-  transition: all .3s ease-out;
-}
-
-header nav#navbar div#contact.active div#overlay {
-  width: 100%;
-  height: 65px;
-  margin-right: 0;
-  text-align: center;
-  line-height: 70px;
-}
-
-header nav#navbar div#contact.active div#overlay a {
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0;
-  transition: all .3s ease-out;
-  padding: 26px 24%;
-  background: #1FAB89;
+.active a {
+  padding:24%;
+  /* background: #1FAB89; */
   color: #FFF;
 }
 
-header nav#navbar .menu-bar-open {
+header .menu-bar-open {
   padding: 22px 25px;
   width: 10%;
   display: inline;
@@ -63,18 +21,18 @@ header nav#navbar .menu-bar-open {
   display: none;
 }
 
-header nav#navbar .menu-bar-open:hover .bars {
+header .menu-bar-open:hover .bars {
   background-color: #2e2e2e;
 }
 
-header nav#navbar .menu-bar-open .bars {
+header .menu-bar-open .bars {
   transition: color .1s;
   background: #000;
 }
 
-header nav#navbar .menu-bar-open .bar1,
-header nav#navbar .menu-bar-open .bar2,
-header nav#navbar .menu-bar-open .bar3 {
+header .menu-bar-open .bar1,
+header .menu-bar-open .bar2,
+header .menu-bar-open .bar3 {
   width: 25px;
   height: 2.5px;
   margin: 4.5px 0;
@@ -155,7 +113,6 @@ section.about-me .row div#about-content div.contact-social-media ul li#linked-in
 section.send-message {
   padding: 80px;
   width: 100%;
-  height: 500px;
   background-color: #ebebeb;
 }
 
