@@ -410,7 +410,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   section.Schedule div#circle-graph img {
     width: 300px;
     margin-left: 0px;
@@ -491,13 +491,13 @@
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 690px) {
+@media only screen and (max-width: 767px) and (max-width: 690px) {
   header nav#navbar .menu-bar-open .bars {
     margin-left: -30px;
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 530px) {
+@media only screen and (max-width: 767px) and (max-width: 530px) {
   header nav#navbar .menu-bar-open {
     display: inline;
     margin: 0 auto;
@@ -535,7 +535,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 435px) {
+@media only screen and (max-width: 767px) and (max-width: 435px) {
   footer {
     padding: 0;
   }
