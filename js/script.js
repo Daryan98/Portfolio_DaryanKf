@@ -34,7 +34,7 @@ $(document).ready(function () {
         
 
     // navbar for Small Device Nav
-    $("header nav#navbar .menu-bar-open, header nav#navbar li ").click(function () {
+    $("header nav#navbar .menu-bar-open, header nav#navbar li").click(function () {
         if ($("header").height() != 70)
             $("header").animate({
                 height: 70
@@ -45,13 +45,18 @@ $(document).ready(function () {
             }, 10);
     });
 
-    $(" header nav#navbar li ").click(function () {
+    $(" header nav#navbar li, body ").click(function () {
         if ($("header").height() != 70)
             $("header").animate({
                 height: 70
             }, 10);
 
     });
+    $("header nav#navbar .menu-bar-open").on("click", function(){
+        $("header nav#navbar .menu-bar-open .bars").css({
+            "color": "#1FAB89",
+        })
+    })
 
     // Skills slider  
     $('ul#graph-skills').carouFredSel({

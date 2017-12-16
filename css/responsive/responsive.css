@@ -389,6 +389,27 @@
     margin-left: 0px;
     margin: 0 auto;
   }
+  section.random {
+    padding: 130px 0 0;
+  }
+  section.random div#yoda-pic {
+    margin-left: 0px;
+  }
+  section.random div#yoda-pic img {
+    margin-top: 0px;
+    width: 250px;
+  }
+  section.random div#i-do {
+    width: 100%;
+    margin-left: 50px;
+    float: left;
+  }
+  section.random div#i-do h1 {
+    font-size: 1.3em;
+  }
+  section.random div#i-do ul li {
+    font-size: 1em;
+  }
   section.project {
     display: none;
   }
@@ -410,7 +431,7 @@
     width: 100%;
     width: auto;
     float: left;
-    padding-right: 25%;
+    padding-right: 0;
   }
   footer div#right div.social-media ul li {
     border: 2px solid #1FAB89;

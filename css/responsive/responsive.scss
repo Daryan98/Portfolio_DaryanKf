@@ -258,10 +258,9 @@
                         font-size: 1.2em;
                         &:last-child {
                             display: block;
-                            a{
+                            a {
                                 color: #1FAB89;
                             }
-                            
                         }
                     }
                 }
@@ -453,16 +452,19 @@
             padding: 0 20px;
         }
     }
+
     @media only screen and (max-width: 530px) {
-        header nav#navbar {
-            .menu-bar-open {
-                display: inline;
-                margin: 0 auto;
-                margin-right: 10%;
-            }
-            div#nav {
-                ul li:nth-child(6) {
-                    display: none;
+        header {
+            nav#navbar {
+                .menu-bar-open {
+                    display: inline;
+                    margin: 0 auto;
+                    margin-right: 10%;
+                }
+                div#nav {
+                    ul li:nth-child(6) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -478,6 +480,27 @@
                     width: 250px;
                     margin-left: 0px;
                     margin: 0 auto; // width: 100%;
+                }
+            }
+        }
+        section.random {
+            padding: 130px 0 0;
+            div#yoda-pic {
+                margin-left: 0px;
+                img {
+                    margin-top: 0px;
+                    width: 250px;
+                }
+            }
+            div#i-do {
+                width: 100%;
+                margin-left: 50px;
+                float: left;
+                h1 {
+                    font-size: 1.3em;
+                }
+                ul li {
+                    font-size: 1em;
                 }
             }
         }
@@ -499,7 +522,7 @@
                         width: 100%;
                         width: auto;
                         float: left;
-                        padding-right: 25%;
+                        padding-right: 0;
                         li {
                             border: 2px solid #1FAB89;
                         }
