@@ -1,3 +1,6 @@
+// Scrool to top
+$('div#scroll-top').fadeOut(0);
+
 $(document).ready(function () {
     // Toggle Fade Profile QUestion
     $("section.resources h1 i span").fadeOut();
@@ -13,10 +16,10 @@ $(document).ready(function () {
     });
 
     // Scrool to top
-    $(document).ready(function(){
+
         //Check to see if the window is top if not then display button
         $(window).scroll(function(){
-            if ($(this).scrollTop() > 150) {
+            if ($(this).scrollTop() > 400) {
                 $('div#scroll-top').fadeIn();
             } else {
                 $('div#scroll-top').fadeOut();
@@ -29,25 +32,24 @@ $(document).ready(function () {
             return false;
         });
         
-    });
 
     // navbar for Small Device Nav
     $("header nav#navbar .menu-bar-open, header nav#navbar li ").click(function () {
         if ($("header").height() != 70)
             $("header").animate({
                 height: 70
-            }, 100);
+            }, 10);
         else
             $("header").animate({
                 height: 700
-            }, 100);
+            }, 10);
     });
 
     $(" header nav#navbar li ").click(function () {
         if ($("header").height() != 70)
             $("header").animate({
                 height: 70
-            }, 100);
+            }, 10);
 
     });
 

@@ -216,6 +216,9 @@
   header nav#navbar div#nav ul li:last-child {
     display: block;
   }
+  header nav#navbar div#nav ul li:last-child a {
+    color: #1FAB89;
+  }
   section.Schedule div#circle-graph img {
     display: block;
     margin: 0 auto;
@@ -373,9 +376,6 @@
     display: inline;
     margin: 0 auto;
     margin-right: 10%;
-  }
-  header nav#navbar div#nav {
-    width: 60%;
   }
   header nav#navbar div#nav ul li:nth-child(6) {
     display: none;

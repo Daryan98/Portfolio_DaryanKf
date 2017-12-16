@@ -258,6 +258,10 @@
                         font-size: 1.2em;
                         &:last-child {
                             display: block;
+                            a{
+                                color: #1FAB89;
+                            }
+                            
                         }
                     }
                 }
@@ -457,7 +461,6 @@
                 margin-right: 10%;
             }
             div#nav {
-                width: 60%;
                 ul li:nth-child(6) {
                     display: none;
                 }
