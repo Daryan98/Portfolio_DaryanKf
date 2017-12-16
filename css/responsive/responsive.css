@@ -368,13 +368,13 @@
   }
 }
 
-@media only screen and (max-width: 989px) and (max-width: 690px) {
+@media only screen and (max-width: 690px) {
   header nav#navbar .menu-bar-open .bars {
     margin-left: -30px;
   }
 }
 
-@media only screen and (max-width: 989px) and (max-width: 530px) {
+@media only screen and (max-width: 530px) {
   header nav#navbar .menu-bar-open {
     display: inline;
     margin: 0 auto;
