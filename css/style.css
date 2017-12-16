@@ -866,6 +866,10 @@ footer div#right div.social-media ul li#twitter:hover i {
   color: #00aced;
 }
 
+footer div#right div.social-media ul li#instagram i {
+  margin-top: -2px;
+}
+
 footer div#right div.social-media ul li#instagram:hover {
   border: 2px solid #bc2a8d;
 }

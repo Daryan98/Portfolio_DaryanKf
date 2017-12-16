@@ -790,12 +790,19 @@ footer {
                         color: #00aced;
                     }
                 }
-                li#instagram:hover {
+                li#instagram{
+                    i{
+                        margin-top: -2px;
+                        
+                    }
+                 &:hover {
                     border: 2px solid #bc2a8d;
                     i {
                         color: #bc2a8d;
                     }
+                }   
                 }
+                
                 li#linked-in:hover {
                     border: 2px solid #007bb6;
                     i {
