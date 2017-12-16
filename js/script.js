@@ -1,9 +1,10 @@
 $(document).ready(function () {
-
-    $(window).scroll(function(){
-        
+    // Toggle Fade Profile QUestion
+    $("section.resources h1 i span").fadeOut();
+    $("section.resources h1 i").hover(function(){
+        $("section.resources h1 i span").fadeToggle(200);
     });
-
+   
     // Scroll when clicking the nav items
     $('header nav#navbar div#nav ul li a').click(function () {
         $("html, body").animate({

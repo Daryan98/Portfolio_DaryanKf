@@ -614,6 +614,33 @@ section.resources h1 {
   color: #333333;
   text-align: center;
   margin-bottom: 50px;
+  position: relative;
+}
+
+section.resources h1 i {
+  position: absolute;
+  top: 0;
+  margin-left: 10px;
+  font-size: .7em;
+  color: #1FAB89;
+}
+
+section.resources h1 i span {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 60px;
+  top: -60px;
+  margin-left: -40px;
+  margin-bottom: 10px;
+  font-size: .45em;
+  letter-spacing: .4px;
+  background: #1FAB89;
+  color: #FFF;
+  font-weight: 500;
+  border-radius: 4px 4px;
+  padding: 5px;
+  transition: opacity .3s ease;
 }
 
 section.resources div {
@@ -743,91 +770,115 @@ footer {
   width: 100%;
   height: 80px;
   background: #f7f7f7;
-  padding: 30px;
+  padding: 0px;
   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
 }
 
-footer p#creater {
+footer div#left {
   width: 30%;
+  line-height: 80px;
+}
+
+footer div#left p#creater {
+  width: 100%;
   display: inline;
+  float: left;
+  margin-bottom: 0;
+  text-align: left;
   color: #333333;
 }
 
-footer p#like-dev {
-  text-align: center;
-  margin-top: -4px;
-  font-size: .7em;
+footer div#center {
+  width: 40%;
+  height: 80px;
 }
 
-footer p#like-dev span {
+footer div#center p#like-dev {
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: .7em;
+  padding: 20px 0 0;
+  float: left;
+  text-align: center;
+}
+
+footer div#center p#like-dev span {
   display: block;
   font-weight: 600;
   color: #333333;
 }
 
-footer div.social-media {
+footer div#right {
+  width: 30%;
+}
+
+footer div#right div.social-media {
   float: right;
-  width: 100%;
+  width: 80%;
+  height: 80px;
 }
 
-footer div.social-media ul {
+footer div#right div.social-media ul {
   width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  margin-bottom: 0;
 }
 
-footer div.social-media ul li {
+footer div#right div.social-media ul li {
   list-style: none;
   width: 40px;
   height: 40px;
   display: inline;
   float: right;
-  margin: -10px 5px;
+  margin: 0px 5px;
   background: #FFF;
   border-radius: 100%;
   text-align: center;
-  border: 1px solid #CCC;
+  border: 2px solid #CCC;
   transition: all .2s ease-in-out;
   line-height: 40px;
 }
 
-footer div.social-media ul li a {
+footer div#right div.social-media ul li a {
   text-decoration: none;
 }
 
-footer div.social-media ul li a i {
+footer div#right div.social-media ul li a i {
   font-size: 1.3em;
   transition: .1s ease-in-out;
   color: #383838;
 }
 
-footer div.social-media ul li#facebook:hover {
-  border: 1px solid #3b5998;
+footer div#right div.social-media ul li#facebook:hover {
+  border: 2px solid #3b5998;
 }
 
-footer div.social-media ul li#facebook:hover i {
+footer div#right div.social-media ul li#facebook:hover i {
   color: #3b5998;
 }
 
-footer div.social-media ul li#twitter:hover {
-  border: 1px solid #00aced;
+footer div#right div.social-media ul li#twitter:hover {
+  border: 2px solid #00aced;
 }
 
-footer div.social-media ul li#twitter:hover i {
+footer div#right div.social-media ul li#twitter:hover i {
   color: #00aced;
 }
 
-footer div.social-media ul li#instagram:hover {
-  border: 1px solid #bc2a8d;
+footer div#right div.social-media ul li#instagram:hover {
+  border: 2px solid #bc2a8d;
 }
 
-footer div.social-media ul li#instagram:hover i {
+footer div#right div.social-media ul li#instagram:hover i {
   color: #bc2a8d;
 }
 
-footer div.social-media ul li#linked-in:hover {
-  border: 1px solid #007bb6;
+footer div#right div.social-media ul li#linked-in:hover {
+  border: 2px solid #007bb6;
 }
 
-footer div.social-media ul li#linked-in:hover i {
+footer div#right div.social-media ul li#linked-in:hover i {
   color: #007bb6;
 }
  
