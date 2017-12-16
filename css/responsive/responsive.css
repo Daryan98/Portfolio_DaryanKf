@@ -368,19 +368,14 @@
   }
 }
 
-@media only screen and (max-width: 690px) {
-  header nav#navbar .menu-bar-open .bars {
-    margin-left: -30px;
-  }
-}
-
 @media only screen and (max-width: 530px) {
   header nav#navbar .menu-bar-open {
     display: inline;
     margin: 0 auto;
+    margin-right: 10%;
   }
-  header nav#navbar .menu-bar-open .bars {
-    margin-left: -30px;
+  header nav#navbar div#nav {
+    width: 60%;
   }
   header nav#navbar div#nav ul li:nth-child(6) {
     display: none;

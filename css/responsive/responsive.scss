@@ -308,7 +308,7 @@
                 }
             }
             div#center {
-         display: none;
+                display: none;
             }
             div#right {
                 width: 50%;
@@ -446,13 +446,7 @@
             }
         }
         footer {
-        padding: 0 20px;
-        }
-        
-    }
-    @media only screen and (max-width: 690px) {
-        header nav#navbar .menu-bar-open .bars {
-            margin-left: -30px;
+            padding: 0 20px;
         }
     }
     @media only screen and (max-width: 530px) {
@@ -460,12 +454,13 @@
             .menu-bar-open {
                 display: inline;
                 margin: 0 auto;
-                .bars {
-                    margin-left: -30px;
-                }
+                margin-right: 10%;
             }
-            div#nav ul li:nth-child(6) {
-                display: none;
+            div#nav {
+                width: 60%;
+                ul li:nth-child(6) {
+                    display: none;
+                }
             }
         }
         section.about-me .row div#about-content p {
@@ -491,10 +486,8 @@
             div#left {
                 display: none;
             }
-
             div#right {
                 width: 100%;
-                
                 div.social-media {
                     width: 100%;
                     float: left;
@@ -503,7 +496,7 @@
                         width: 100%;
                         width: auto;
                         float: left;
-                        padding-right:25%;
+                        padding-right: 25%;
                         li {
                             border: 2px solid #1FAB89;
                         }
