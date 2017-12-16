@@ -408,31 +408,13 @@
   }
   footer div#right div.social-media {
     width: 100%;
+    float: left;
   }
   footer div#right div.social-media ul {
+    padding-left: 20px;
     width: 100%;
-    padding-right: 25%;
-  }
-  footer div#right div.social-media ul li {
-    border: 2px solid #1FAB89;
-  }
-}
-
-@media only screen and (max-width: 989px) and (max-width: 435px) {
-  footer {
-    background: rgba(0, 0, 0, 0.836);
-  }
-  footer div#left {
-    display: none;
-  }
-  footer div#right {
-    width: 100%;
-  }
-  footer div#right div.social-media {
-    width: 100%;
-  }
-  footer div#right div.social-media ul {
-    width: 100%;
+    width: auto;
+    float: left;
     padding-right: 25%;
   }
   footer div#right div.social-media ul li {
