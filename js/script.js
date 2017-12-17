@@ -1,7 +1,10 @@
 // Scrool to top
 $('div#scroll-top').fadeOut(0);
 
+
+
 $(document).ready(function () {
+
     // Toggle Fade Profile QUestion
     $("section.resources h1 i span").fadeOut();
     $("section.resources h1 i").hover(function(){
@@ -37,11 +40,11 @@ $(document).ready(function () {
     $("header nav#navbar .menu-bar-open, header nav#navbar li").click(function () {
         if ($("header").height() != 70)
             $("header").animate({
-                height: 70
+                height: 70,
             }, 10);
         else
             $("header").animate({
-                height: 700
+                height: 700,
             }, 10);
     });
 
