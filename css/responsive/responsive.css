@@ -251,7 +251,7 @@
     background: rgba(0, 0, 0, 0.836);
   }
   footer div#left {
-    width: 50%;
+    width: 40%;
   }
   footer div#left p#creater {
     color: #FFF;
@@ -260,7 +260,10 @@
     display: none;
   }
   footer div#right {
-    width: 50%;
+    width: 60%;
+  }
+  footer div#right div.social-media ul {
+    width: 100%;
   }
   footer div#right div.social-media ul li {
     border: 2px solid #1FAB89;
@@ -268,11 +271,6 @@
 }
 
 @media only screen and (max-width: 989px) {
-  div#scroll-top a {
-    left: -10px;
-    transform: rotate(180deg);
-    transform: rotateY(180deg);
-  }
   header nav#navbar div#nav ul li:nth-child(4) {
     display: none;
   }
@@ -376,7 +374,70 @@
   }
 }
 
+@media only screen and (max-width: 836px) {
+  section.Schedule div#circle-graph img {
+    display: block;
+    width: 300px;
+    margin-left: 90px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.random {
+    padding: 130px 0 0;
+  }
+  section.random div#yoda-pic {
+    margin-left: 0px;
+  }
+  section.random div#yoda-pic img {
+    margin-top: 0px;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 12%;
+  }
+  section.random div#i-do {
+    margin: 80px 0;
+    text-align: center;
+    display: block;
+    float: none;
+  }
+  section.random div#i-do h1 {
+    font-size: 1.3em;
+  }
+  section.random div#i-do ul li {
+    font-size: 1em;
+  }
+  section.project div#photos {
+    /* Prevent vertical gaps */
+    -webkit-column-count: 2;
+    -webkit-column-gap: 15px;
+    -moz-column-count: 2;
+    -moz-column-gap: 15px;
+    column-count: 2;
+    column-gap: 15px;
+  }
+  section.project div#photos div#pic .about-website h2 {
+    font-size: 1.1em;
+  }
+  section.project div#photos div#pic .about-website div.view a:nth-child(2) {
+    margin-left: 15px;
+  }
+  section.project div#photos div#pic .about-website div.view a p {
+    font-size: .8em;
+  }
+  section.project div#photos div#pic .about-website div.view a p:hover {
+    margin-top: -1px;
+    font-size: .9em;
+    color: #FFF;
+  }
+}
+
 @media only screen and (max-width: 530px) {
+  div#scroll-top a {
+    left: -10px;
+    transform: rotate(180deg);
+    transform: rotateY(180deg);
+  }
   header nav#navbar div#logo img {
     margin: 15px 30px;
   }
@@ -399,34 +460,10 @@
     width: 100%;
   }
   section.Schedule div#circle-graph img {
-    width: 250px;
+    width: 220px;
     margin-left: 0px;
     margin: 0 auto;
     transform: translateX(0px);
-  }
-  section.random {
-    padding: 130px 0 0;
-  }
-  section.random div#yoda-pic {
-    margin-left: 0px;
-  }
-  section.random div#yoda-pic img {
-    margin-top: 0px;
-    width: 250px;
-  }
-  section.random div#i-do {
-    width: 80%;
-    margin-right: 0;
-    padding-right: 0;
-    margin-left: 50px;
-    transform: translateX(0px);
-    float: left;
-  }
-  section.random div#i-do h1 {
-    font-size: 1.3em;
-  }
-  section.random div#i-do ul li {
-    font-size: 1em;
   }
   section.project {
     display: none;
