@@ -150,10 +150,10 @@ header nav#navbar div#contact div#overlay a:hover {
 }
 
 header nav#navbar .menu-bar-open {
-  padding: 22px 0px;
+  padding: 22px 30px;
   width: 10%;
   display: inline;
-  float: left;
+  float: right;
   position: absolute;
   top: 0;
   margin: 0;
