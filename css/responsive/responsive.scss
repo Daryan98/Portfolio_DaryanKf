@@ -455,6 +455,9 @@
 
     @media only screen and (max-width: 530px) {
         header {
+            nav#navbar div#logo img{
+                margin: 15px 30px;
+            }
             nav#navbar {
                 .menu-bar-open {
                     display: inline;
@@ -468,9 +471,17 @@
                 }
             }
         }
-        section.about-me .row div#about-content p {
-            margin: 0;
-            width: 100%;
+        section.about-me .row {
+            div#my-image img{
+                transform: translateX(0px);
+                
+            }
+            div#about-content{
+                transform: translateX(0px);
+             p {
+                margin: 0;
+                width: 100%;
+            }}
         } /////////////////////////
         //Schedule-section
         ///////////////////////////
@@ -480,6 +491,7 @@
                     width: 250px;
                     margin-left: 0px;
                     margin: 0 auto; // width: 100%;
+                    transform: translateX(0px);
                 }
             }
         }
@@ -493,10 +505,12 @@
                 }
             }
             div#i-do {
-                width: 100%;
+                width: 80%;
+                margin-right: 0;
+                padding-right: 0;
                 margin-left: 50px;
+                transform: translateX(0px);
                 float: left;
-                transform: translateX(100px);
                 h1 {
                     font-size: 1.3em;
                 }
