@@ -585,7 +585,11 @@
                     }
                 }
             }
-           
+            section.random {
+                div#i-do {
+                    transform: translateX(0px);
+                }
+            }
             section.project {
                 display: none;
             }
