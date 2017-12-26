@@ -233,7 +233,8 @@ section.about-me .row div#about-content p {
   word-spacing: 4px;
   width: 90%;
   color: #5e5e5e;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
+  display: block;
 }
 
 section.about-me .first-row div#my-image,
@@ -885,6 +886,4 @@ footer div#right div.social-media ul li#linked-in:hover {
 footer div#right div.social-media ul li#linked-in:hover i {
   color: #007bb6;
 }
- 
-
- /*# sourceMappingURL= style.css.map */
+/*# sourceMappingURL=style.css.map */
