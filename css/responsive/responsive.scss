@@ -1,164 +1,189 @@
-        // From 1280 to lower
-        ///////////////////////////////////////////////////////////////////////////////
-        // Contact Page Responsive
-        ////////////////////////////////////////////////////////////////////////////////
-        @media only screen and (max-width: 1200px) {
-            section#contact {
-                // box-shadow: none;
-                border-bottom: none;
-                padding-bottom: 0;
-                .row {
-                    div#about-content {
-                        p {
-                            // margin-top: 50px !important;
-                            margin-bottom: 0 !important;
-                            &#phone-num {
-                                margin-top: 5px !important;
-                            }
-                            span#or {
-                                display: block;
-                            }
-                        }
-                        div.contact-social-media {
-                            ul {
-                                margin-top: 30px;
-                                margin-bottom: 0;
-                            }
-                        }
+
+///////////////////////////////////////////////////////////////////////////////
+// Contact Page Responsive
+////////////////////////////////////////////////////////////////////////////////
+@media only screen and (max-width: 1200px) {
+    section#contact {
+        // box-shadow: none;
+        border-bottom: none;
+        padding-bottom: 0;
+        .row {
+            div#about-content {
+                p {
+                    // margin-top: 50px !important;
+                    margin-bottom: 0 !important;
+                    &#phone-num {
+                        margin-top: 5px !important;
                     }
-                    div#my-image img {
-                        margin-top: 60px;
+                    span#or {
+                        display: block;
+                    }
+                }
+                div.contact-social-media {
+                    ul {
+                        margin-top: 30px;
+                        margin-bottom: 0;
                     }
                 }
             }
+            div#my-image img {
+                margin-top: 60px;
+            }
         }
+    }
+}
 
-        @media only screen and (max-width: 989px) {
-            section.about-me {
-                // box-shadow: none;
-                border-bottom: none;
-                padding-bottom: 0;
-                .row {
-                    div#about-content {
-                        display: block;
-                        text-align: center;
-                        margin-bottom: 80px;
-                        h1 {
-                            text-align: center;
-                        }
-                        h4 {
-                            text-align: center;
-                        }
-                        p {
-                            margin-left: 50px; // margin-top: 50px !important;
-                            margin-bottom: 0 !important;
-                            &#phone-num {
-                                margin-top: 10px !important;
-                            }
-                            span#or {
-                                display: none;
-                            }
-                        }
-                        div.contact-social-media {
-                            display: none;
-                        }
+@media only screen and (max-width: 989px) {
+    section.about-me {
+        // box-shadow: none;
+        border-bottom: none;
+        padding-bottom: 0;
+        .row {
+            div#about-content {
+                display: block;
+                text-align: center;
+                margin-bottom: 80px;
+                h1 {
+                    text-align: center;
+                }
+                h4 {
+                    text-align: center;
+                }
+                p {
+                    margin-left: 50px; // margin-top: 50px !important;
+                    margin-bottom: 0 !important;
+                    &#phone-num {
+                        margin-top: 10px !important;
                     }
-                    div#my-image img {
+                    span#or {
                         display: none;
                     }
                 }
+                div.contact-social-media {
+                    display: none;
+                }
+            }
+            div#my-image img {
+                display: none;
             }
         }
+    }
+}
 
-        @media only screen and (max-width: 768px) {
-            section.send-message {
-                textarea#input-message {
-                    width: 100%;
-                    height: 200px;
-                    margin-bottom: 0px;
-                    margin-top: 0;
-                }
-                .right {
-                    padding: 10px;
-                    width: 100%;
-                    display: inline;
-                    float: left;
-                    margin: 0;
-                }
-                .left {
-                    padding: 10px;
-                    width: 100%;
-                    display: inline;
-                    float: left;
-                    margin: 0;
+@media only screen and (max-width: 768px) {
+    section.send-message {
+        textarea#input-message {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 0px;
+            margin-top: 0;
+        }
+        .right {
+            padding: 10px;
+            width: 100%;
+            display: inline;
+            float: left;
+            margin: 0;
+        }
+        .left {
+            padding: 10px;
+            width: 100%;
+            display: inline;
+            float: left;
+            margin: 0;
+        }
+    }
+} ///////////////////////////////////////////////////////////////////////////////
+// index Page  Responsive
+////////////////////////////////////////////////////////////////////////////////
+@media only screen and (max-width:1200px) {
+    //////////////////////////
+    //Header
+    ///////////////////////////
+    header {
+        nav#navbar {
+            div#logo {
+                width: 15%;
+            }
+            div#nav {
+                width: 70%;
+                ul {
+                    li {
+                        a {
+                            font-size: .9em;
+                        }
+                    }
                 }
             }
-        } ///////////////////////////////////////////////////////////////////////////////
-        // index Page  Responsive
-        ////////////////////////////////////////////////////////////////////////////////
-        @media only screen and (max-width:1200px) {
-            //////////////////////////
-            //about-me-section
-            ///////////////////////////
-            section.about-me {
-                .first-row div#my-image img {
-                    // width: 65%;
-                    margin-top: 170px;
+            div#contact {
+                width: 15%;
+            }
+        } //////////////////////////
+        //about-me-section
+        ///////////////////////////
+        section.about-me {
+            .first-row div#my-image img {
+                // width: 65%;
+                margin-top: 170px;
+            }
+        } //////////////////////////
+        //Schedule-section
+        ///////////////////////////
+        section.Schedule {
+            div#circle-graph {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 300px;
+                    opacity: 0;
+                    transition: all .5s ease-out;
                 }
-            } //////////////////////////
-            //Schedule-section
-            ///////////////////////////
-            section.Schedule {
-                div#circle-graph {
-                    img {
-                        display: block;
-                        margin: 0 auto;
-                        width: 300px;
-                        opacity: 0;
-                        transition: all .5s ease-out;
-                    }
+            }
+        } //////////////////////////
+        //Random-section
+        ///////////////////////////
+        section.random {
+            padding: 130px 0 0;
+            div#yoda-pic {
+                margin-left: 100px;
+                img {
+                    margin-top: 30px;
+                    width: 450px;
                 }
-            } //////////////////////////
-            //Random-section
-            ///////////////////////////
-            section.random {
-                padding: 130px 0 0;
-                div#yoda-pic {
-                    margin-left: 100px;
-                    img {
-                        margin-top: 30px;
-                        width: 450px;
-                    }
+            }
+            div#i-do {
+                margin-left: 100px;
+                float: left;
+                h1 {
+                    font-size: 1.3em;
                 }
-                div#i-do {
-                    margin-left: 100px;
-                    float: left;
-                    h1 {
-                        font-size: 1.3em;
-                    }
-                    ul li {
-                        font-size: 1em;
-                    }
+                ul li {
+                    font-size: 1em;
                 }
-            } //////////////////////////
-            //skills-section
-            ///////////////////////////
-            section.skills .skills div#labels p {
+            }
+        } //////////////////////////
+        //skills-section
+        ///////////////////////////
+        section.skills .all-skills {
+            div#labels p {
                 font-size: .8em;
                 color: #5e5e5e;
             }
-            section.skills .skills div#strokes img {
+            div#strokes img {
                 height: 445px;
             }
-            section.skills .skills div#graphs ul li p.procent {
-                font-size: 2.5em;
-                display: block;
-                text-align: center;
+            div#graphs {
+                margin-left: -20px;
+                ul li p.procent {
+                    font-size: 2.5em;
+                    display: block;
+                    text-align: center;
+                    span {
+                        font-size: .3em;
+                    }
+                }
             }
-            section.skills .skills div#graphs ul li p.procent span {
-                font-size: .3em;
-            }
-            section.skills .skills div#graphs ul li p.name {
+            div#graphs ul li p.name {
                 vertical-align: bottom;
                 display: block;
                 text-align: center;
@@ -166,454 +191,463 @@
                 letter-spacing: 0px;
                 color: whitesmoke;
                 font-weight: 600;
-            } //////////////////////////
-            //reasourses-section
-            ///////////////////////////
-            section.resources {
-                h1 {
-                    font-size: 1.6em;
-                }
-                div {
-                    margin-bottom: 50px;
-                    padding: 0 20px;
-                    img {
-                        width: 45px;
-                        display: inline;
-                        float: left;
-                        margin-right: 10px;
-                    }
-                    h3 {
-                        list-style: none;
-                        font-weight: 400;
-                        font-size: 1.1em;
-                        margin-top: 13px;
-                        letter-spacing: 1px;
-                    }
-                    a {
-                        text-decoration: none;
-                    }
-                    p {
-                        font-size: .9em;
-                        margin-top: 25px;
-                        font-size: 14px;
-                        letter-spacing: 1px;
-                        line-height: 25px;
-                        font-weight: 400;
-                    }
-                }
-            } //////////////////////////
-            //Project-section
-            ///////////////////////////
-            section.project {
-                div#photos {
-                    width: 100%;
-                    /* Prevent vertical gaps */
-                    -webkit-column-count: 4;
-                    -webkit-column-gap: 15px;
-                    -moz-column-count: 4;
-                    -moz-column-gap: 15px;
-                    column-count: 4;
-                    column-gap: 15px;
-                    div#pic {
-                        margin: 0px auto 15px;
-                        .about-website {
-                            padding: 10px 20px;
-                            h2 {
-                                letter-spacing: 1px;
-                                font-size: 1.2em;
-                            }
-                            p {
-                                letter-spacing: 1px;
-                                margin-bottom: 8px;
-                                font-size: .8em;
-                            }
-                            div.view {
-                                a {
-                                    p {
-                                        font-size: .9em;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
             }
-        } // From 1024 to lower
-        @media only screen and (max-width: 1024px) {
-            header {
-                position: fixed;
-                nav#navbar {
-                    .menu-bar-open {
-                        display: block;
-                        margin-right: 0px;
-                        margin-top: 0px;
-                    }
-                    div#contact {
-                        display: none;
-                    }
-                    div#nav ul {
-                        margin-top: 100px;
-                        li {
-                            display: block;
-                            font-size: 1.2em;
-                            &:last-child {
-                                display: block;
-                                a {
-                                    color: #1FAB89;
-                                }
-                            }
-                        }
-                    }
-                }
-            } //////////////////////////
-            //Schedule-section
-            ///////////////////////////
-            section.Schedule {
-                div#circle-graph {
-                    img {
-                        display: block;
-                        margin: 0 auto;
-                        width: 300px;
-                        margin-left: -20px;
-                        opacity: 0;
-                        transition: all .5s ease-out;
-                    }
-                }
-            } //////////////////////////
-            //Random-section
-            ///////////////////////////
-            section.random {
-                padding: 130px 0 0;
-                div#yoda-pic {
-                    margin-left: 100px;
-                    img {
-                        margin-top: 30px;
-                        width: 450px;
-                    }
-                }
-                div#i-do {
-                    margin-left: 90px;
-                    float: left;
-                    h1 {
-                        font-size: 1.3em;
-                    }
-                    ul li {
-                        font-size: 1em;
-                    }
-                }
-            } // Footer
-            footer {
-                background: rgba(0, 0, 0, 0.836);
-                div#left {
-                    width: 40%;
-                    p#creater {
-                        color: #FFF;
-                    }
-                }
-                div#center {
-                    display: none;
-                }
-                div#right {
-                    width: 60%;
-                    div.social-media {
-                        ul {
-                            width: 100%;
-                            li {
-                                border: 2px solid #1FAB89;
-                            }
-                        }
-                    }
-                }
+        } //////////////////////////
+        //reasourses-section
+        ///////////////////////////
+        section.resources {
+            h1 {
+                font-size: 1.6em;
             }
-        }
-
-        @media only screen and (max-width: 989px) {
-            header nav#navbar div#nav ul li:nth-child(4) {
-                display: none;
-            }
-            section.about-me {
-                .first-row div#my-image img {
-                    display: block;
-                    margin: 0 auto;
-                    margin-left: auto;
-                }
-                .goal-row {
-                    .goal-content {
-                        #goal-learn {
-                            height: 280px;
-                            div#goal-slider {
-                                margin-left: 10%;
-                                div {
-                                    width: 25%;
-                                    margin: 10px 0;
-                                    margin-right: 4%;
-                                }
-                            }
-                        }
-                    }
-                }
-            } /////////////////////////
-            //Schedule-section
-            ///////////////////////////
-            section.Schedule {
-                div#design {
-                    width: 100%;
-                    display: block;
-                    margin: 0 auto;
-                    margin-bottom: 50px;
-                    ul {
-                        text-align: center;
-                    }
-                }
-                div#circle-graph {
-                    transform: rotate(75deg);
-                    img {
-                        display: block;
-                        width: 300px;
-                        margin-left: 180px;
-                    }
-                }
-                div#coding {
-                    width: 100%;
-                    display: block;
-                    margin: 0 auto;
-                    margin-top: 55px;
-                    ul {
-                        text-align: center;
-                    }
-                }
-            } //////////////////////////
-            //Random-section
-            ///////////////////////////
-            // Random section 
-            section.random {
-                padding: 130px 0 0;
-                div#yoda-pic {
-                    margin-left: 0px;
-                    img {
-                        margin-top: 60px;
-                        width: 400px;
-                    }
-                }
-                div#i-do {
-                    margin-left: 130px;
-                    float: left;
-                    h1 {
-                        font-size: 1.3em;
-                    }
-                    ul li {
-                        font-size: 1em;
-                    }
-                }
-            } //////////////////////////
-            //section-section
-            ///////////////////////////
-            section.skills {
-                display: none;
-            } //////////////////////////
-            //Project-section
-            ///////////////////////////
-            section.project {
-                div#photos {
-                    /* Prevent vertical gaps */
-                    -webkit-column-count: 3;
-                    -webkit-column-gap: 15px;
-                    -moz-column-count: 3;
-                    -moz-column-gap: 15px;
-                    column-count: 3;
-                    column-gap: 15px;
-                    div#pic {
-                        margin: 0px auto 15px;
-                        .about-website {
-                            padding: 10px 20px;
-                            h2 {
-                                letter-spacing: 1px;
-                                font-size: 1.2em;
-                            }
-                            p {
-                                letter-spacing: 1px;
-                                margin-bottom: 8px;
-                                font-size: .8em;
-                            }
-                            div.view {
-                                a {
-                                    &:nth-child(2) {
-                                        margin-left: 25px;
-                                    }
-                                    p {
-                                        font-size: .9em;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            footer {
+            div {
+                margin-bottom: 50px;
                 padding: 0 20px;
-            }
-        }
-
-        @media only screen and (max-width: 836px) {
-          /////////////////////////
-            //Schedule-section
-            ///////////////////////////
-            section.Schedule {
-                div#circle-graph {
-                    img {
-
-                        display: block;
-                        width: 300px;
-                        margin-left: 90px;
-                    }
+                img {
+                    width: 45px;
+                    display: inline;
+                    float: left;
+                    margin-right: 10px;
+                }
+                h3 {
+                    list-style: none;
+                    font-weight: 400;
+                    font-size: 1.1em;
+                    margin-top: 13px;
+                    letter-spacing: 1px;
+                }
+                a {
+                    text-decoration: none;
+                }
+                p {
+                    font-size: .9em;
+                    margin-top: 25px;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                    font-weight: 400;
                 }
             }
         }
-
-        @media only screen and (max-width: 768px) {
-            //////////////////////////
-            //Random-section
-            ///////////////////////////
-            // Random section 
-            section.random {
-                padding: 130px 0 0;
-                div#yoda-pic {
-                    margin-left: 0px;
-                    img {
-                        margin-top: 0px;
-                        width: 90%;
-                        margin: 0 auto;
-                        margin-left: 12%;
+    } //////////////////////////
+    //Project-section
+    ///////////////////////////
+    section.project {
+        div#photos {
+            width: 100%;
+            /* Prevent vertical gaps */
+            -webkit-column-count: 4;
+            -webkit-column-gap: 15px;
+            -moz-column-count: 4;
+            -moz-column-gap: 15px;
+            column-count: 4;
+            column-gap: 15px;
+            div#pic {
+                margin: 0px auto 15px;
+                .about-website {
+                    padding: 10px 20px;
+                    h2 {
+                        letter-spacing: 1px;
+                        font-size: 1.2em;
                     }
-                }
-                div#i-do {
-                    margin: 80px 0;
-                    text-align: center;
-                    display: block;
-                    float: none;
-                    h1 {
-                        font-size: 1.3em;
+                    p {
+                        letter-spacing: 1px;
+                        margin-bottom: 8px;
+                        font-size: .8em;
                     }
-                    ul li {
-                        font-size: 1em;
-                    }
-                }
-            } //////////////////////////
-            //Project-section
-            ///////////////////////////
-            section.project {
-                div#photos {
-                    /* Prevent vertical gaps */
-                    -webkit-column-count: 2;
-                    -webkit-column-gap: 15px;
-                    -moz-column-count: 2;
-                    -moz-column-gap: 15px;
-                    column-count: 2;
-                    column-gap: 15px;
-                    div#pic {
-                        .about-website {
-                            h2 {
-                                font-size: 1.1em;
+                    div.view {
+                        a {
+                            p {
+                                font-size: .9em;
                             }
-                            div.view {
-                                a {
-                                    &:nth-child(2) {
-                                        margin-left: 15px;
-                                    }
-                                    p {
-                                        font-size: .8em;
-                                        &:hover {
-                                            margin-top: -1px;
-                                            font-size: .9em;
-                                            color: #FFF;
-                                        }
-                                    }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} // From 1024 to lower
+@media only screen and (max-width: 1024px) {
+    header {
+        position: fixed;
+        nav#navbar {
+            #nav-bars {
+                display: block;
+            }
+            div#contact {
+                display: none;
+            }
+            div#nav ul {
+                margin-top: 100px;
+                li {
+                    display: block;
+                    font-size: 1.1em;
+                    &:last-child {
+                        display: block;
+                        a {
+                            color: #1FAB89;
+                        }
+                    }
+                }
+            }
+        }
+    } //////////////////////////
+    //Schedule-section
+    ///////////////////////////
+    section.Schedule {
+        div#circle-graph {
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+                margin-left: -20px;
+                opacity: 0;
+                transition: all .5s ease-out;
+            }
+        }
+    } //////////////////////////
+    //Random-section
+    ///////////////////////////
+    section.random {
+        padding: 130px 0 0;
+        div#yoda-pic {
+            margin-left: 100px;
+            img {
+                margin-top: 30px;
+                width: 450px;
+            }
+        }
+        div#i-do {
+            margin-left: 90px;
+            float: left;
+            h1 {
+                font-size: 1.3em;
+            }
+            ul li {
+                font-size: 1em;
+            }
+        }
+    } // Footer
+    footer {
+        background: rgba(0, 0, 0, 0.836);
+        div#left {
+            width: 40%;
+            p#creater {
+                color: #FFF;
+            }
+        }
+        div#center {
+            display: none;
+        }
+        div#right {
+            width: 60%;
+            div.social-media {
+                ul {
+                    width: 100%;
+                    li {
+                        border: 2px solid #CCC;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 989px) {
+    header nav#navbar {
+        // #nav-bars {
+        //     margin-top: -60px;
+        // }
+        div#nav ul li:nth-child(4) {
+            display: none;
+        }
+    }
+    section.about-me {
+        .first-row div#my-image img {
+            display: block;
+            margin: 0 auto;
+            margin-left: auto;
+        }
+        .goal-row {
+            .goal-content {
+                #goal-learn {
+                    height: 280px;
+                    div#goal-slider {
+                        margin-left: 10%;
+                        div {
+                            width: 25%;
+                            margin: 10px 0;
+                            margin-right: 4%;
+                        }
+                    }
+                }
+            }
+        }
+    } /////////////////////////
+    //Schedule-section
+    ///////////////////////////
+    section.Schedule {
+        div#design {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            ul {
+                text-align: center;
+            }
+        }
+        div#circle-graph {
+            transform: rotate(75deg);
+            img {
+                display: block;
+                width: 300px;
+                margin-left: 180px;
+            }
+        }
+        div#coding {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 55px;
+            ul {
+                text-align: center;
+            }
+        }
+    } //////////////////////////
+    //Random-section
+    ///////////////////////////
+    // Random section 
+    section.random {
+        padding: 130px 0 0;
+        div#yoda-pic {
+            margin-left: 0px;
+            img {
+                margin-top: 60px;
+                width: 400px;
+            }
+        }
+        div#i-do {
+            margin-left: 130px;
+            float: left;
+            h1 {
+                font-size: 1.3em;
+            }
+            ul li {
+                font-size: 1em;
+            }
+        }
+    } //////////////////////////
+    //section-section
+    ///////////////////////////
+    section.skills {
+        display: none;
+    } //////////////////////////
+    //Project-section
+    ///////////////////////////
+    section.project {
+        div#photos {
+            /* Prevent vertical gaps */
+            -webkit-column-count: 3;
+            -webkit-column-gap: 15px;
+            -moz-column-count: 3;
+            -moz-column-gap: 15px;
+            column-count: 3;
+            column-gap: 15px;
+            div#pic {
+                margin: 0px auto 15px;
+                .about-website {
+                    padding: 10px 20px;
+                    h2 {
+                        letter-spacing: 1px;
+                        font-size: 1.2em;
+                    }
+                    p {
+                        letter-spacing: 1px;
+                        margin-bottom: 8px;
+                        font-size: .8em;
+                    }
+                    div.view {
+                        a {
+                            &:nth-child(2) {
+                                margin-left: 25px;
+                            }
+                            p {
+                                font-size: .9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 836px) {
+    /////////////////////////
+    //Schedule-section
+    ///////////////////////////
+    section.Schedule {
+        div#circle-graph {
+            img {
+                display: block;
+                width: 300px;
+                margin-left: 90px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    //////////////////////////
+    //Random-section
+    ///////////////////////////
+    // Random section 
+    section.random {
+        padding: 130px 0 0;
+        div#yoda-pic {
+            margin-left: 0px;
+            img {
+                margin-top: 0px;
+                width: 90%;
+                margin: 0 auto;
+                margin-left: 12%;
+            }
+        }
+        div#i-do {
+            margin: 80px 0;
+            text-align: center;
+            display: block;
+            float: none;
+            h1 {
+                font-size: 1.3em;
+            }
+            ul li {
+                font-size: 1em;
+            }
+        }
+    } //////////////////////////
+    //Project-section
+    ///////////////////////////
+    section.project {
+        div#photos {
+            /* Prevent vertical gaps */
+            -webkit-column-count: 2;
+            -webkit-column-gap: 15px;
+            -moz-column-count: 2;
+            -moz-column-gap: 15px;
+            column-count: 2;
+            column-gap: 15px;
+            div#pic {
+                .about-website {
+                    h2 {
+                        font-size: 1.1em;
+                    }
+                    div.view {
+                        a {
+                            &:nth-child(2) {
+                                margin-left: 15px;
+                            }
+                            p {
+                                font-size: .8em;
+                                &:hover {
+                                    margin-top: -1px;
+                                    font-size: .9em;
+                                    color: #FFF;
                                 }
                             }
                         }
                     }
                 }
             }
-            
         }
-        @media only screen and (max-width: 530px) {
-            div#scroll-top {
-                a {
-                    left: -10px;
-                    transform: rotate(180deg);
-                    transform: rotateY(180deg);
-                }
-            }
-            header {
-                nav#navbar div#logo img {
-                    margin: 15px 30px;
-                }
-                nav#navbar {
-                    .menu-bar-open {
-                        display: inline;
-                        margin: 0 auto;
-                        margin-right: 10%;
-                    }
-                    div#nav {
-                        ul li:nth-child(6) {
-                            display: none;
-                        }
-                    }
-                }
-            }
-            section.about-me .row {
-                div#my-image img {
-                    transform: translateX(0px);
-                }
-                div#about-content {
-                    transform: translateX(0px);
-                    p {
-                        margin: 0;
-                        width: 100%;
-                    }
-                }
-            } /////////////////////////
-            //Schedule-section
-            ///////////////////////////
-            section.Schedule {
-                div#circle-graph {
-                    img {
-                        width: 220px;
-                        margin-left: 0px;
-                        margin: 0 auto; // width: 100%;
-                        transform: translateX(0px);
-                    }
-                }
-            }
-            section.random {
-                div#i-do {
-                    transform: translateX(0px);
-                }
-            }
-            section.project {
-                display: none;
-            }
-            footer {
-                background: rgba(0, 0, 0, 0.836);
-                div#left {
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    header nav#navbar {
+        #nav-bars {
+            margin-top: -60px;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    div#scroll-top {
+        a {
+            left: -10px;
+            transform: rotate(180deg);
+            transform: rotateY(180deg);
+        }
+    }
+    header {
+        nav#navbar div#logo img {
+            margin: 15px 30px;
+        }
+        nav#navbar {
+            div#nav {
+                ul li:nth-child(6) {
                     display: none;
                 }
-                div#right {
+            }
+        }
+    }
+    section.about-me .row {
+        div#my-image img {
+            transform: translateX(0px);
+        }
+        div#about-content {
+            transform: translateX(0px);
+            p {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    } /////////////////////////
+    //Schedule-section
+    ///////////////////////////
+    section.Schedule {
+        div#circle-graph {
+            img {
+                width: 220px;
+                margin-left: 0px;
+                margin: 0 auto; // width: 100%;
+                transform: translateX(0px);
+            }
+        }
+    }
+    section.random {
+        div#i-do {
+            transform: translateX(0px);
+        }
+    }
+    section.project {
+        display: none;
+    }
+    footer {
+        background: rgba(0, 0, 0, 0.836);
+        div#left {
+            display: none;
+        }
+        div#right {
+            width: 100%;
+            div.social-media {
+                width: 100%;
+                float: left;
+                ul {
+                    padding-left: 20px;
                     width: 100%;
-                    div.social-media {
-                        width: 100%;
-                        float: left;
-                        ul {
-                            padding-left: 20px;
-                            width: 100%;
-                            width: auto;
-                            float: left;
-                            padding-right: 0;
-                            li {
-                                border: 2px solid #1FAB89;
-                            }
-                        }
+                    width: auto;
+                    float: left;
+                    padding-right: 0;
+                    li {
+                        border: 2px solid #1FAB89;
                     }
                 }
             }
         }
+    }
+}

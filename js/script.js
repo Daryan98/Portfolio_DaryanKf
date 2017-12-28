@@ -1,7 +1,12 @@
 // Scrool to top
 $('div#scroll-top').fadeOut(0);
 
-
+// Menu Bar
+$(document).ready(function(){
+	$('#nav-bars').click(function(){
+		$(this).toggleClass('open');
+	});
+});
 
 $(document).ready(function () {
 
@@ -37,7 +42,7 @@ $(document).ready(function () {
         
 
     // navbar for Small Device Nav
-    $("header nav#navbar .menu-bar-open").click(function () {
+    $("header nav#navbar #nav-bars").click(function () {
         if ($("header").height() != 70)
             $("header").animate({
                 height: 70,
@@ -53,13 +58,8 @@ $(document).ready(function () {
             $("header").animate({
                 height: 70
             }, 10);
-
+            $("header nav#navbar #nav-bars").removeClass('open');
     });
-    $("header nav#navbar .menu-bar-open").on("click", function(){
-        $("header nav#navbar .menu-bar-open .bars").css({
-            "color": "#1FAB89",
-        })
-    })
 
     // Skills slider  
     $('ul#graph-skills').carouFredSel({

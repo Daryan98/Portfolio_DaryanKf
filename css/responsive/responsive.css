@@ -79,52 +79,67 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  section.about-me .first-row div#my-image img {
+  header nav#navbar div#logo {
+    width: 15%;
+  }
+  header nav#navbar div#nav {
+    width: 70%;
+  }
+  header nav#navbar div#nav ul li a {
+    font-size: .9em;
+  }
+  header nav#navbar div#contact {
+    width: 15%;
+  }
+  header section.about-me .first-row div#my-image img {
     margin-top: 170px;
   }
-  section.Schedule div#circle-graph img {
+  header section.Schedule div#circle-graph img {
     display: block;
     margin: 0 auto;
     width: 300px;
     opacity: 0;
     transition: all .5s ease-out;
   }
-  section.random {
+  header section.random {
     padding: 130px 0 0;
   }
-  section.random div#yoda-pic {
+  header section.random div#yoda-pic {
     margin-left: 100px;
   }
-  section.random div#yoda-pic img {
+  header section.random div#yoda-pic img {
     margin-top: 30px;
     width: 450px;
   }
-  section.random div#i-do {
+  header section.random div#i-do {
     margin-left: 100px;
     float: left;
   }
-  section.random div#i-do h1 {
+  header section.random div#i-do h1 {
     font-size: 1.3em;
   }
-  section.random div#i-do ul li {
+  header section.random div#i-do ul li {
     font-size: 1em;
   }
-  section.skills .skills div#labels p {
+  header section.skills .all-skills div#labels p {
     font-size: .8em;
     color: #5e5e5e;
   }
-  section.skills .skills div#strokes img {
+  header section.skills .all-skills div#strokes img {
     height: 445px;
   }
-  section.skills .skills div#graphs ul li p.procent {
+  header section.skills .all-skills div#graphs {
+    margin-left: -20px;
+  }
+  header section.skills .all-skills div#graphs ul li p.procent {
     font-size: 2.5em;
     display: block;
     text-align: center;
   }
-  section.skills .skills div#graphs ul li p.procent span {
+  header section.skills .all-skills div#graphs ul li p.procent span {
     font-size: .3em;
   }
-  section.skills .skills div#graphs ul li p.name {
+  header section.skills .all-skills div#graphs ul li p.name {
     vertical-align: bottom;
     display: block;
     text-align: center;
@@ -133,30 +148,30 @@
     color: whitesmoke;
     font-weight: 600;
   }
-  section.resources h1 {
+  header section.resources h1 {
     font-size: 1.6em;
   }
-  section.resources div {
+  header section.resources div {
     margin-bottom: 50px;
     padding: 0 20px;
   }
-  section.resources div img {
+  header section.resources div img {
     width: 45px;
     display: inline;
     float: left;
     margin-right: 10px;
   }
-  section.resources div h3 {
+  header section.resources div h3 {
     list-style: none;
     font-weight: 400;
     font-size: 1.1em;
     margin-top: 13px;
     letter-spacing: 1px;
   }
-  section.resources div a {
+  header section.resources div a {
     text-decoration: none;
   }
-  section.resources div p {
+  header section.resources div p {
     font-size: .9em;
     margin-top: 25px;
     font-size: 14px;
@@ -198,10 +213,8 @@
   header {
     position: fixed;
   }
-  header nav#navbar .menu-bar-open {
+  header nav#navbar #nav-bars {
     display: block;
-    margin-right: 0px;
-    margin-top: 0px;
   }
   header nav#navbar div#contact {
     display: none;
@@ -211,7 +224,7 @@
   }
   header nav#navbar div#nav ul li {
     display: block;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   header nav#navbar div#nav ul li:last-child {
     display: block;
@@ -266,7 +279,7 @@
     width: 100%;
   }
   footer div#right div.social-media ul li {
-    border: 2px solid #1FAB89;
+    border: 2px solid #CCC;
   }
 }
 
@@ -432,6 +445,12 @@
   }
 }
 
+@media only screen and (max-width: 668px) {
+  header nav#navbar #nav-bars {
+    margin-top: -60px;
+  }
+}
+
 @media only screen and (max-width: 530px) {
   div#scroll-top a {
     left: -10px;
@@ -440,11 +459,6 @@
   }
   header nav#navbar div#logo img {
     margin: 15px 30px;
-  }
-  header nav#navbar .menu-bar-open {
-    display: inline;
-    margin: 0 auto;
-    margin-right: 10%;
   }
   header nav#navbar div#nav ul li:nth-child(6) {
     display: none;
