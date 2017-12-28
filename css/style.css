@@ -48,7 +48,7 @@ header {
   top: 0;
   left: 0;
   background-color: whitesmoke;
-  overflow-y: hidden;
+  overflow: hidden;
   transition: 0.5s;
   padding: 0;
   transition: all .3s ease-out;
@@ -104,13 +104,14 @@ header nav#navbar div#nav ul li a {
   display: inline;
   font-weight: 500;
   text-decoration: none;
-  font-size: .9em;
+  font-size: 1em;
+  letter-spacing: 1px;
   color: #5e5e5e;
   transition: all .2s ease-out;
 }
 
 header nav#navbar div#nav ul li a:hover {
-  color: #1FAB89;
+  color: #333333;
 }
 
 header nav#navbar div#nav ul li:last-child {
