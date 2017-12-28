@@ -13,7 +13,7 @@ header div#contact div.active {
   height: 70px;
   margin-right: 0;
   text-align: center;
-  background-color: #1FAB89;
+  background-color: #011627;
   line-height: 70px;
 }
 
@@ -41,7 +41,7 @@ section.about-me .row div#about-content p#phone-num {
 }
 
 section.about-me .row div#about-content p span#or {
-  color: #1FAB89;
+  color: #011627;
 }
 
 section.about-me .row div#about-content div.contact-social-media {
@@ -131,7 +131,7 @@ section.send-message form textarea {
 
 section.send-message form input:focus,
 section.send-message form textarea:focus {
-  box-shadow: 0 0px 2px #1fab89 !important;
+  box-shadow: 0 0px 2px #011627 !important;
 }
 
 section.send-message form .submit {
@@ -140,7 +140,7 @@ section.send-message form .submit {
 
 section.send-message form .submit #input-submit {
   color: white;
-  background: #1FAB89;
+  background: #011627;
   cursor: pointer;
 }
 

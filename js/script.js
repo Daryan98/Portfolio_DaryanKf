@@ -5,7 +5,29 @@ $('div#scroll-top').fadeOut(0);
 $(document).ready(function(){
 	$('#nav-bars').click(function(){
 		$(this).toggleClass('open');
-	});
+    });
+
+      // navbar for Small Device Nav
+      $("header nav#navbar #nav-bars").click(function () {
+        if ($("header").height() != 70)
+            $("header").animate({
+                height: 70,
+            }, 10);
+        else
+            $("header").animate({
+                height: 700,
+            }, 10);
+    });
+
+    $(" header nav#navbar li ").click(function () {
+        $(" header nav#navbar li ").addClass("active");
+        if ($("header").height() != 70)
+            $("header").animate({
+                height: 70
+            }, 10);
+            $("header nav#navbar #nav-bars").removeClass('open');
+    });
+
 });
 
 $(document).ready(function () {
@@ -13,7 +35,7 @@ $(document).ready(function () {
     // Toggle Fade Profile QUestion
     $("section.resources h1 i span").fadeOut();
     $("section.resources h1 i").hover(function(){
-        $("section.resources h1 i span").fadeToggle(200);
+    $("section.resources h1 i span").fadeToggle(200);
     });
    
     // Scroll when clicking the nav items
@@ -41,26 +63,7 @@ $(document).ready(function () {
         });
         
 
-    // navbar for Small Device Nav
-    $("header nav#navbar #nav-bars").click(function () {
-        if ($("header").height() != 70)
-            $("header").animate({
-                height: 70,
-            }, 10);
-        else
-            $("header").animate({
-                height: 700,
-            }, 10);
-    });
-
-    $(" header nav#navbar li ").click(function () {
-        if ($("header").height() != 70)
-            $("header").animate({
-                height: 70
-            }, 10);
-            $("header nav#navbar #nav-bars").removeClass('open');
-    });
-
+  
     // Skills slider  
     $('ul#graph-skills').carouFredSel({
         responsive: true,
