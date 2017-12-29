@@ -346,6 +346,11 @@ section.about-me .row div#about-content p {
   display: block;
 }
 
+section.about-me .first-row div#about-content p a,
+section.about-me .row div#about-content p a {
+  text-decoration: none;
+}
+
 section.about-me .first-row div#my-image,
 section.about-me .row div#my-image {
   width: 100%;
@@ -513,7 +518,6 @@ section.random div#i-do h1 {
   font-weight: 400;
   color: #011627;
   margin-bottom: 30px;
-  font-size: 1.4em;
 }
 
 section.random div#i-do ul {
@@ -521,10 +525,10 @@ section.random div#i-do ul {
 }
 
 section.random div#i-do ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   list-style: none;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   color: #5e5e5e;
 }
 
