@@ -191,7 +191,7 @@
                         }
                     }
                     &:hover a {
-                        background: $primary-color;
+                        // background: $primary-color;
                         color: #FFF;
                     }
                 }
@@ -892,13 +892,13 @@
                         }
                     }
                     li#facebook:hover {
-                        border: 2px solid #3b5998;
+                        border: 1px solid #3b5998;
                         i {
                             color: #3b5998;
                         }
                     }
                     li#twitter:hover {
-                        border: 2px solid #00aced;
+                        border: 1px solid #00aced;
                         i {
                             color: #00aced;
                         }
@@ -908,14 +908,14 @@
                             margin-top: -5px;
                         }
                         &:hover {
-                            border: 2px solid #bc2a8d;
+                            border: 1px solid #bc2a8d;
                             i {
                                 color: #bc2a8d;
                             }
                         }
                     }
                     li#linked-in:hover {
-                        border: 2px solid #007bb6;
+                        border: 1px solid #007bb6;
                         i {
                             color: #007bb6;
                         }
