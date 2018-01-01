@@ -400,19 +400,19 @@
     padding: 130px 0 0;
   }
   section.random div#yoda-pic {
-    margin-left: 0px;
+    width: 80%;
   }
   section.random div#yoda-pic img {
     margin-top: 0px;
-    width: 90%;
-    margin: 0 auto;
-    margin-left: 12%;
+    width: 80%;
+    margin-left: 30%;
   }
   section.random div#i-do {
     margin: 80px 0;
     text-align: center;
     display: block;
     float: none;
+    transform: translateX(100px);
   }
   section.random div#i-do h1 {
     font-size: 1.3em;
@@ -449,6 +449,19 @@
   header nav#navbar #nav-bars {
     margin-top: -60px;
   }
+  section.random {
+    padding: 130px 0 0;
+  }
+  section.random div#yoda-pic {
+    margin: 0 auto;
+    width: 60%;
+    padding-left: 30px;
+  }
+  section.random div#yoda-pic img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 530px) {
@@ -458,10 +471,16 @@
     transform: rotateY(180deg);
   }
   header nav#navbar div#logo img {
-    margin: 15px 30px;
+    margin: 15px 20px;
+  }
+  header nav#navbar div#nav ul li {
+    margin: 0;
   }
   header nav#navbar div#nav ul li:nth-child(6) {
     display: none;
+  }
+  header nav#navbar #nav-bars {
+    margin-right: 30px;
   }
   section.about-me .row div#my-image img {
     transform: translateX(0px);
@@ -486,7 +505,7 @@
     display: none;
   }
   footer {
-    background: rgba(0, 0, 0, 0.836);
+    background: #011627;
   }
   footer div#left {
     display: none;
@@ -504,9 +523,6 @@
     width: auto;
     float: left;
     padding-right: 0;
-  }
-  footer div#right div.social-media ul li {
-    border: 2px solid #1FAB89;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

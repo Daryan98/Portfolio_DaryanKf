@@ -1,4 +1,3 @@
-
 ///////////////////////////////////////////////////////////////////////////////
 // Contact Page Responsive
 ////////////////////////////////////////////////////////////////////////////////
@@ -352,8 +351,6 @@
     }
 }
 
-
-
 @media only screen and (max-width: 989px) {
     header nav#navbar {
         // #nav-bars {
@@ -509,12 +506,11 @@
     section.random {
         padding: 130px 0 0;
         div#yoda-pic {
-            margin-left: 0px;
+            width: 80%;
             img {
                 margin-top: 0px;
-                width: 90%;
-                margin: 0 auto;
-                margin-left: 12%;
+                width: 80%;
+                margin-left: 30%;
             }
         }
         div#i-do {
@@ -522,6 +518,7 @@
             text-align: center;
             display: block;
             float: none;
+            transform: translateX(100px);
             h1 {
                 font-size: 1.3em;
             }
@@ -568,33 +565,59 @@
 }
 
 @media only screen and (max-width: 668px) {
-    header nav#navbar {
-        #nav-bars {
-            margin-top: -60px;
+    header {
+        nav#navbar {
+            #nav-bars {
+                margin-top: -60px;
+            }
+        }
+    }
+    section.random {
+        padding: 130px 0 0;
+        div#yoda-pic {
+            margin: 0 auto;
+            width: 60%;
+            padding-left: 30px;
+            img {
+                width: 100%;
+                display: block; // margin-left: 20%;
+                margin: 0 auto;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 530px) {
+    // Scrool to top Icon
     div#scroll-top {
         a {
             left: -10px;
             transform: rotate(180deg);
             transform: rotateY(180deg);
         }
-    }
+    } /////////////////////////
+    //Header-section
+    ///////////////////////////
     header {
         nav#navbar div#logo img {
-            margin: 15px 30px;
+            margin: 15px 20px;
         }
         nav#navbar {
             div#nav {
-                ul li:nth-child(6) {
-                    display: none;
+                ul li {
+                    margin: 0;
+                    &:nth-child(6) {
+                        display: none;
+                    }
                 }
             }
+            #nav-bars {
+                margin-right: 30px;
+            }
         }
-    }
+    } /////////////////////////
+    //About me-section
+    ///////////////////////////
     section.about-me .row {
         div#my-image img {
             transform: translateX(0px);
@@ -618,17 +641,23 @@
                 transform: translateX(0px);
             }
         }
-    }
+    } /////////////////////////
+    //Random-section
+    ///////////////////////////
     section.random {
         div#i-do {
             transform: translateX(0px);
         }
-    }
+    } /////////////////////////
+    //Projects-section
+    ///////////////////////////
     section.project {
         display: none;
-    }
-    footer {
-        background: rgba(0, 0, 0, 0.836);
+    } /////////////////////////
+    //Footer
+    ///////////////////////////
+   footer {
+        background: #011627;
         div#left {
             display: none;
         }
@@ -643,9 +672,6 @@
                     width: auto;
                     float: left;
                     padding-right: 0;
-                    li {
-                        border: 2px solid #1FAB89;
-                    }
                 }
             }
         }

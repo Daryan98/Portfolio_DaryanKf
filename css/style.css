@@ -94,8 +94,8 @@ header nav#navbar div#nav ul li {
   text-align: center;
   display: inline;
   width: 100%;
-  margin: 0 12px;
   position: relative;
+  margin: 0 10px;
 }
 
 header nav#navbar div#nav ul li a {
@@ -109,10 +109,32 @@ header nav#navbar div#nav ul li a {
   letter-spacing: 1px;
   color: #5e5e5e;
   transition: all .2s ease-out;
+  position: relative;
+  padding-bottom: 26px;
+}
+
+header nav#navbar div#nav ul li a:after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0%;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #000;
 }
 
 header nav#navbar div#nav ul li a:hover {
-  color: #011627;
+  cursor: pointer;
+}
+
+header nav#navbar div#nav ul li a:hover:after {
+  width: 80%;
+  left: 10%;
+}
+
+header nav#navbar div#nav ul li a:hover {
+  color: #000c16;
 }
 
 header nav#navbar div#nav ul li:last-child {
@@ -121,7 +143,7 @@ header nav#navbar div#nav ul li:last-child {
 }
 
 header nav#navbar div#nav ul li.active {
-  color: #011627;
+  color: #000c16;
 }
 
 header nav#navbar div#contact {
@@ -161,6 +183,10 @@ header nav#navbar div#contact .hvr-radial-out a {
   transition: all .3s ease-out;
   font-weight: 600;
   font-size: 1em;
+}
+
+header nav#navbar div#contact .hvr-radial-out a i {
+  padding: 5px;
 }
 
 header nav#navbar div#contact .hvr-radial-out:hover a {
@@ -207,7 +233,7 @@ header nav#navbar #nav-bars {
   margin-right: 50px;
   width: 50px;
   height: 50px;
-  position: relative;
+  position: absolute;
   float: right;
   border-radius: 100%;
   position: relative;
@@ -220,11 +246,8 @@ header nav#navbar #nav-bars {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
-  transition: all .4s;
-}
-
-header nav#navbar #nav-bars:hover {
   background-color: whitesmoke;
+  transition: all .4s;
 }
 
 header nav#navbar #nav-bars span {
@@ -319,7 +342,7 @@ section.about-me .first-row div#about-content h1,
 section.about-me .row div#about-content h1 {
   font-weight: 600;
   font-size: 3.5em;
-  color: #011627;
+  color: #000c16;
   margin-bottom: 0;
 }
 
@@ -329,7 +352,7 @@ section.about-me .row div#about-content h4 {
   letter-spacing: 1px;
   margin: 25px 0 30px;
   word-spacing: 1px;
-  color: #011627;
+  color: #000c16;
   line-height: 32px;
 }
 
@@ -349,6 +372,13 @@ section.about-me .row div#about-content p {
 section.about-me .first-row div#about-content p a,
 section.about-me .row div#about-content p a {
   text-decoration: none;
+  color: #5e5e5e;
+  font-weight: bold;
+}
+
+section.about-me .first-row div#about-content p a:hover,
+section.about-me .row div#about-content p a:hover {
+  color: #000c16;
 }
 
 section.about-me .first-row div#my-image,
@@ -445,7 +475,7 @@ section.Schedule div#design ul li {
 }
 
 section.Schedule div#design ul li:nth-child(1) {
-  color: #011627;
+  color: #000c16;
   font-size: 1.4em;
   margin-bottom: 10px;
   font-weight: 400;
@@ -485,7 +515,7 @@ section.Schedule div#coding ul li {
 }
 
 section.Schedule div#coding ul li:nth-child(1) {
-  color: #011627;
+  color: #000c16;
   font-size: 1.4em;
   margin-bottom: 10px;
   font-weight: 400;
@@ -516,7 +546,7 @@ section.random div#i-do {
 section.random div#i-do h1 {
   font-size: 1.5em;
   font-weight: 400;
-  color: #011627;
+  color: #000c16;
   margin-bottom: 30px;
 }
 
@@ -725,7 +755,7 @@ section.resources {
 section.resources h1 {
   font-weight: 400;
   font-size: 1.8em;
-  color: #011627;
+  color: #000c16;
   text-align: center;
   margin-bottom: 50px;
   position: relative;
@@ -774,7 +804,7 @@ section.resources div h3 {
   font-weight: 400;
   font-size: 1.2em;
   margin-top: 13px;
-  color: #011627;
+  color: #000c16;
   letter-spacing: 1px;
 }
 
@@ -783,7 +813,7 @@ section.resources div a {
 }
 
 section.resources div a h3:hover {
-  color: #011627;
+  color: #f39c12;
 }
 
 section.resources div p {
