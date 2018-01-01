@@ -33,10 +33,10 @@ $(document).ready(function(){
 $(document).ready(function () {
 
     // Toggle Fade Profile QUestion
-    $("section.resources h1 i span").fadeOut();
-    $("section.resources h1 i").hover(function(){
-    $("section.resources h1 i span").fadeToggle(200);
-    });
+    // $("section.resources h1 i span").fadeOut();
+    // $("section.resources h1 i").hover(function(){
+    // $("section.resources h1 i span").fadeToggle(300);
+    // });
    
     // Scroll when clicking the nav items
     $('header nav#navbar div#nav ul li a').click(function () {
@@ -185,6 +185,7 @@ $(document).ready(function () {
         $(this).children(".about-website").animate({
             opacity: 1
         }, 300);
+        
     })
     $("section.project div#pic").mouseleave(function () {
         $(this).children(".about-website").animate({

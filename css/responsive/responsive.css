@@ -260,6 +260,9 @@
   section.random div#i-do ul li {
     font-size: 1em;
   }
+  section.skills .all-skills div#graphs {
+    margin-left: -20px;
+  }
   footer {
     background: rgba(0, 0, 0, 0.836);
   }
@@ -277,9 +280,6 @@
   }
   footer div#right div.social-media ul {
     width: 100%;
-  }
-  footer div#right div.social-media ul li {
-    border: 2px solid #CCC;
   }
 }
 

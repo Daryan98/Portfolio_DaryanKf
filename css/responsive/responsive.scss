@@ -173,12 +173,14 @@
             }
             div#graphs {
                 margin-left: -20px;
-                ul li p.procent {
-                    font-size: 2.5em;
-                    display: block;
-                    text-align: center;
-                    span {
-                        font-size: .3em;
+                ul {
+                    li p.procent {
+                        font-size: 2.5em;
+                        display: block;
+                        text-align: center;
+                        span {
+                            font-size: .3em;
+                        }
                     }
                 }
             }
@@ -325,6 +327,14 @@
                 font-size: 1em;
             }
         }
+    } //////////////////////////
+    //Skills-section
+    ///////////////////////////
+    section.skills .all-skills div#graphs {
+        margin-left: -20px;
+        ul {
+            // left: 10px;
+        }
     } // Footer
     footer {
         background: rgba(0, 0, 0, 0.836);
@@ -342,9 +352,6 @@
             div.social-media {
                 ul {
                     width: 100%;
-                    li {
-                        border: 2px solid #CCC;
-                    }
                 }
             }
         }
@@ -656,7 +663,7 @@
     } /////////////////////////
     //Footer
     ///////////////////////////
-   footer {
+    footer {
         background: #011627;
         div#left {
             display: none;

@@ -19,11 +19,11 @@ div#scroll-top a {
   background: whitesmoke;
   padding: 0 15px;
   border-radius: 20px 0 0 20px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 div#scroll-top a i {
-  color: #383838;
+  color: #464646;
   font-size: 1.3em;
   line-height: 40px;
   transition: all .2s ease;
@@ -255,7 +255,7 @@ header nav#navbar #nav-bars span {
   height: 3px;
   width: 56%;
   left: 22%;
-  background: #383838;
+  background: #464646;
   border-radius: 9px;
   opacity: 1;
   -webkit-transform: rotate(0deg);
@@ -621,6 +621,7 @@ section.skills .all-skills div#strokes {
 section.skills .all-skills div#strokes img {
   width: 100%;
   opacity: .3;
+  height: 445px;
 }
 
 section.skills .all-skills div#graphs {
@@ -768,22 +769,31 @@ section.resources h1 i {
   color: #011627;
 }
 
+section.resources h1 i:hover span {
+  transform: scale(0.9);
+  opacity: 1;
+  top: -75px;
+}
+
 section.resources h1 i span {
   position: absolute;
   display: block;
-  width: 100px;
-  height: 60px;
-  top: -60px;
-  margin-left: -40px;
+  width: 110px;
+  height: 70px;
+  top: -30px;
+  margin-left: -46px;
   margin-bottom: 10px;
-  font-size: .45em;
-  letter-spacing: .4px;
+  font-size: .55em;
+  letter-spacing: .5px;
+  line-height: 15px;
   background: #011627;
   color: #FFF;
   font-weight: 500;
   border-radius: 4px 4px;
   padding: 5px;
-  transition: opacity .2s ease-in-out;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all .3s ease-in-out;
 }
 
 section.resources div {
@@ -826,6 +836,7 @@ section.resources div p {
 }
 
 section.project {
+  height: 800px;
   padding: 80px 0;
   width: 100%;
 }
@@ -847,16 +858,24 @@ section.project div#photos div#pic {
   position: relative;
   opacity: .9;
   transition: opacity .3s;
+  overflow: hidden;
 }
 
 section.project div#photos div#pic:hover {
   opacity: 1;
 }
 
+section.project div#photos div#pic:hover img {
+  border-radius: 5px;
+  padding: 0;
+  height: 100%;
+}
+
 section.project div#photos div#pic img {
   width: 100% !important;
   height: auto !important;
   padding: 10px;
+  transition: padding .3s;
   border-radius: 5px;
   border: 1px solid whitesmoke;
   box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
@@ -879,12 +898,13 @@ section.project div#photos div#pic .about-website {
 
 section.project div#photos div#pic .about-website h2 {
   letter-spacing: 1px;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 section.project div#photos div#pic .about-website p {
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: .8em;
 }
 
@@ -904,15 +924,14 @@ section.project div#photos div#pic .about-website div.view a:nth-child(2) {
 }
 
 section.project div#photos div#pic .about-website div.view a p {
-  color: #f39c12;
-  font-weight: bold;
+  color: #f39909;
+  font-weight: 600;
   font-size: .9em;
   transition: all .3s;
 }
 
 section.project div#photos div#pic .about-website div.view a p:hover {
   color: #FFF;
-  margin-top: -1px;
 }
 
 footer {
@@ -986,7 +1005,7 @@ footer div#right div.social-media ul li {
   text-align: center;
   border: 1px solid #CCC;
   transition: all .2s ease-in-out;
-  line-height: 38px;
+  line-height: 40px;
 }
 
 footer div#right div.social-media ul li a {
@@ -996,7 +1015,7 @@ footer div#right div.social-media ul li a {
 footer div#right div.social-media ul li a i {
   font-size: 1.1em;
   transition: .1s ease-in-out;
-  color: #383838;
+  color: #464646;
 }
 
 footer div#right div.social-media ul li#facebook:hover {
@@ -1017,6 +1036,7 @@ footer div#right div.social-media ul li#twitter:hover i {
 
 footer div#right div.social-media ul li#instagram i {
   margin-top: -5px;
+  margin-right: -1px;
 }
 
 footer div#right div.social-media ul li#instagram:hover {
