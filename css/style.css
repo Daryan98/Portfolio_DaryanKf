@@ -1005,6 +1005,7 @@ footer div#right div.social-media ul li {
   text-align: center;
   border: 1px solid #CCC;
   transition: all .2s ease-in-out;
+  line-height: 38px;
 }
 
 footer div#right div.social-media ul li a {
