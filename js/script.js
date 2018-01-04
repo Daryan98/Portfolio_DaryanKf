@@ -15,7 +15,7 @@ $(document).ready(function(){
             }, 10);
         else
             $("header").animate({
-                height: 700,
+                height: screen.height,
             }, 10);
     });
 
