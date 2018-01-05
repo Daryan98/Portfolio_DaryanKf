@@ -30,31 +30,32 @@
     div#scroll-top {
         position: absolute;
         z-index: 3;
+        right: 70px;
+        top: 80%;
         a {
-            position: fixed;
-            right: 0;
-            top: 80%;
             width: 50px;
-            height: 40px;
-            background: $background;
-            padding: 0 15px;
-            border-radius: 20px 0 0 20px;
+            height: 50px;
+            position: fixed;
+            background: $primary-color;
+            border-radius: 50%;
+            margin: auto;
+            text-align: center;
+            vertical-align: middle;
             box-shadow: 0 0 5px 0 rgba( #000, .2);
+            transition: all .3s ease;
+            padding: 12px;
             i {
                 color: $icon-color;
                 font-size: 1.3em;
-                line-height: 40px;
-                transition: all .2s ease;
-                &.rotate {
-                    display: inline-block;
-                    transform: rotate(-45deg);
-                }
+                color: rgb(179, 179, 179);
+                transition: all .3s ease;
             }
             &:hover {
-                i.rotate {
-                    display: inline-block;
-                    transform: rotate(45deg);
-                    color: $primary-color;
+                transform: rotateX(180deg);
+                
+                i {
+                    text-align: center;
+                    color: rgb(255, 255, 255);
                 }
             }
         }
@@ -375,7 +376,6 @@
         }
         .goal-row {
             width: 100%;
-            position: relative;
             .goal-content {
                 width: 100%;
                 #goal-learn {
@@ -758,7 +758,7 @@
         }
     } // my projects section 
     section.project {
-        height: 800px;
+        min-height: 820px;
         padding: 80px 0;
         width: 100%;
         div#photos {
@@ -845,12 +845,14 @@
     footer {
         width: 100%;
         height: 80px;
-        background: rgb(247, 247, 247);
-        padding: 0px;
+        background: $primary-color;
+        padding: 0px 30px;
         box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.10);
         div#left {
-            width: 30%;
+            width: 74%;
             line-height: 80px;
+            float: left;
+            display: inline;
             p#creater {
                 width: 100%;
                 display: inline;
@@ -861,24 +863,8 @@
                 color: $text-color;
             }
         }
-        div#center {
-            width: 40%;
-            height: 80px;
-            text-align: center;
-            p#like-dev {
-                margin-top: 5px;
-                font-size: .7em;
-                padding: 20px 0 0; // float: left;
-                text-align: center;
-                span {
-                    display: block;
-                    font-weight: 600;
-                    color: $text-color;
-                }
-            }
-        }
         div#right {
-            width: 30%;
+            width: 26%;
             div.social-media {
                 float: right;
                 width: 80%;
@@ -886,58 +872,68 @@
                 ul {
                     width: 100%;
                     height: 100%;
-                    padding: 20px 0;
                     margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    -webkit-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
                     li {
                         list-style: none;
-                        width: 40px;
+                        width: 25%;
                         height: 40px;
-                        display: inline;
-                        float: right;
-                        margin: 0px 5px;
-                        background: #FFF;
-                        border-radius: 100%;
-                        text-align: center;
-                        border: 1px solid #CCC;
+                        display: flex;
+                        justify-content: space-around;
                         transition: all .2s ease-in-out;
-                        line-height: 38px;
                         a {
                             text-decoration: none;
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid #CCC;
+                            background: $background;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: all .2s ease-in-out;
                             i {
                                 font-size: 1.1em;
-                                transition: .5s ease;
-                                color: $icon-color; // line-height: 40px;
+                                color: $icon-color;
+                                transition: .2s ease; // line-height: 40px;
                             }
                         }
                     }
-                    li#facebook:hover {
-                        border: 1px solid #3b5998;
-                        i {
-                            color: #3b5998;
+                    li#facebook {
+                        a:hover {
+                            border: 1px solid #3b5998;
+                            i {
+                                color: #3b5998;
+                            }
                         }
                     }
-                    li#twitter:hover {
-                        border: 1px solid #00aced;
-                        i {
-                            color: #00aced;
+                    li#twitter {
+                        a:hover {
+                            border: 1px solid #00aced;
+                            i {
+                                color: #00aced;
+                            }
                         }
                     }
                     li#instagram {
-                        i {
-                            margin-top: -5px;
-                            margin-right: -1px;
-                        }
-                        &:hover {
+                        a:hover {
                             border: 1px solid #bc2a8d;
                             i {
                                 color: #bc2a8d;
                             }
                         }
                     }
-                    li#linked-in:hover {
-                        border: 1px solid #007bb6;
-                        i {
-                            color: #007bb6;
+                    li#linked-in {
+                        a:hover {
+                            border: 1px solid #007bb6;
+                            i {
+                                color: #007bb6;
+                            }
                         }
                     }
                 }

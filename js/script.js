@@ -1,7 +1,7 @@
 // Scrool to top
 $('div#scroll-top').fadeOut(0);
 
-// Menu Bar
+// Header section
 $(document).ready(function(){
 	$('#nav-bars').click(function(){
 		$(this).toggleClass('open');
