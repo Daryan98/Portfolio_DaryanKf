@@ -34,7 +34,7 @@ div#scroll-top a i {
 }
 
 div#scroll-top a:hover {
-  transform: rotateX(180deg);
+  transform: rotate(180deg);
 }
 
 div#scroll-top a:hover i {
@@ -247,7 +247,7 @@ header nav#navbar #nav-bars {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
-  background-color: whitesmoke;
+  background-color: rgba(224, 224, 224, 0.26);
   transition: all .4s;
 }
 
@@ -283,7 +283,7 @@ header nav#navbar #nav-bars span:nth-child(3) {
 }
 
 header nav#navbar #nav-bars.open {
-  background-color: whitesmoke;
+  background-color: rgba(224, 224, 224, 0.26);
 }
 
 header nav#navbar #nav-bars.open span {
@@ -450,11 +450,11 @@ section.about-me .goal-row .goal-content #goal-learn div#goal-slider div img:hov
 }
 
 section.Schedule {
-  background: whitesmoke;
+  background: rgba(224, 224, 224, 0.26);
   width: 100%;
   border-bottom: 1px solid #f1f1f1;
   padding: 80px 0;
-  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.22);
 }
 
 section.Schedule div#design {
@@ -569,8 +569,8 @@ section.skills {
   border-bottom: 1.5px solid #f1f1f1;
   margin: 0;
   padding: 0;
-  background: whitesmoke;
-  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
+  background: rgba(224, 224, 224, 0.26);
+  box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.22);
 }
 
 section.skills .all-skills h1 {
@@ -667,7 +667,7 @@ section.skills .all-skills div#graphs ul li p.procent {
   vertical-align: bottom;
   position: absolute;
   bottom: 80px;
-  color: whitesmoke;
+  color: #f0f0f0;
   opacity: .5;
 }
 
@@ -681,7 +681,7 @@ section.skills .all-skills div#graphs ul li p.name {
   position: absolute;
   bottom: 10px;
   letter-spacing: 1px;
-  color: whitesmoke;
+  color: #f0f0f0;
   font-weight: 600;
 }
 
@@ -879,7 +879,7 @@ section.project div#photos div#pic img {
   padding: 10px;
   transition: padding .3s;
   border-radius: 5px;
-  border: 1px solid whitesmoke;
+  border: 1px solid rgba(224, 224, 224, 0.26);
   box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
   display: inline;
 }
@@ -997,7 +997,7 @@ footer div#right div.social-media ul li a {
   width: 40px;
   height: 40px;
   border: 1px solid #CCC;
-  background: whitesmoke;
+  background: rgba(224, 224, 224, 0.26);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1007,7 +1007,7 @@ footer div#right div.social-media ul li a {
 
 footer div#right div.social-media ul li a i {
   font-size: 1.1em;
-  color: #464646;
+  color: #CCC;
   transition: .2s ease;
 }
 

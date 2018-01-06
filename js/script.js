@@ -1,6 +1,8 @@
 // Scrool to top
 $('div#scroll-top').fadeOut(0);
 
+// Send Button in Contact page
+
 // Header section
 $(document).ready(function(){
 	$('#nav-bars').click(function(){

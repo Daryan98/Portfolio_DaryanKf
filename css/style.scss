@@ -3,7 +3,7 @@
     $text-color: #5e5e5e;
     $text-color-darker:#000c16;
     $icon-color: #464646;
-    $background: rgb(245, 245, 245);
+    $background: rgba(224, 224, 224, 0.26);
     $hr: rgb(241, 241, 241);
     $html: #ff9e2c;
     $gray: #999;
@@ -51,7 +51,7 @@
                 transition: all .3s ease;
             }
             &:hover {
-                transform: rotateX(180deg);
+                transform: rotate(180deg);
                 
                 i {
                     text-align: center;
@@ -421,7 +421,7 @@
         width: 100%;
         border-bottom: 1px solid $hr;
         padding: 80px 0;
-        @include shadow();
+        box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.220);
         div#design {
             float: left;
             margin-top: 50px;
@@ -519,7 +519,8 @@
         margin: 0;
         padding: 0; // @include shadow();
         background: $background;
-        @include shadow();
+        box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.220);
+        
         .all-skills {
             h1 {
                 font-size: 2em;
@@ -602,7 +603,7 @@
                             vertical-align: bottom;
                             position: absolute;
                             bottom: 80px;
-                            color: $background;
+                            color: rgb(240, 240, 240);
                             opacity: .5;
                             span {
                                 font-size: .4em;
@@ -614,7 +615,7 @@
                             position: absolute;
                             bottom: 10px;
                             letter-spacing: 1px;
-                            color: $background;
+                            color: rgb(240, 240, 240);
                             font-weight: 600;
                         }
                     }
@@ -899,7 +900,7 @@
                             transition: all .2s ease-in-out;
                             i {
                                 font-size: 1.1em;
-                                color: $icon-color;
+                                color:#CCC;
                                 transition: .2s ease; // line-height: 40px;
                             }
                         }
@@ -910,6 +911,7 @@
                             i {
                                 color: #3b5998;
                             }
+                         
                         }
                     }
                     li#twitter {
