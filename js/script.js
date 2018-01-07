@@ -1,16 +1,39 @@
 // Scrool to top
 $('div#scroll-top').fadeOut(0);
 
-// Send Button in Contact page
 
-// Header section
-$(document).ready(function(){
-	$('#nav-bars').click(function(){
-		$(this).toggleClass('open');
+// ********************************************************************//
+// Scrool top Button
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+            $('div#scroll-top').fadeIn();
+        } else {
+            $('div#scroll-top').fadeOut();
+        }
     });
 
-      // navbar for Small Device Nav
-      $("header nav#navbar #nav-bars").click(function () {
+    //Click event to scroll to top
+    $('div#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 200);
+        return false;
+    });
+});
+
+
+// ********************************************************************//
+// Header navbar 
+$(document).ready(function () {
+
+    $('#nav-bars').click(function () {
+        $(this).toggleClass('open');
+    });
+
+    // Bars Icon On click animate Down
+    $("header nav#navbar #nav-bars").click(function () {
         if ($("header").height() != 70)
             $("header").animate({
                 height: 70,
@@ -21,58 +44,47 @@ $(document).ready(function(){
             }, 10);
     });
 
+    // navbar Icon On click animate Down
     $(" header nav#navbar li ").click(function () {
         $(" header nav#navbar li ").addClass("active");
         if ($("header").height() != 70)
             $("header").animate({
                 height: 70
             }, 10);
-            $("header nav#navbar #nav-bars").removeClass('open');
+        $("header nav#navbar #nav-bars").removeClass('open');
     });
 
-});
-
-$(document).ready(function () {
-
-    // Toggle Fade Profile QUestion
-    // $("section.resources h1 i span").fadeOut();
-    // $("section.resources h1 i").hover(function(){
-    // $("section.resources h1 i span").fadeToggle(300);
-    // });
-   
-    // Scroll when clicking the nav items
     $('header nav#navbar div#nav ul li a').click(function () {
         $("html, body").animate({
             scrollTop: $($(this).attr('href')).offset().top - 0
         }, 300);
     });
+});
 
-    // Scrool to top
+// ********************************************************************//
+// About me section
+$(document).ready(function () {
 
-        //Check to see if the window is top if not then display button
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 400) {
-                $('div#scroll-top').fadeIn();
-            } else {
-                $('div#scroll-top').fadeOut();
-            }
-        });
-        
-        //Click event to scroll to top
-        $('div#scroll-top').click(function(){
-            $('html, body').animate({scrollTop : 0},200);
-            return false;
-        });
-        
+    $('section.about-me .row div#my-image img').css({
+        "transform": "translateX(0)",
+        "opacity": "1",
+    });
 
-  
+    $('section.about-me .row div#about-content').css({
+        "transform": "translateX(0)",
+        "opacity": "1",
+    });
+});
+
+// ********************************************************************//
+// Skills Section 
+$(document).ready(function () {
+
     // Skills slider  
     $('ul#graph-skills').carouFredSel({
         responsive: true,
         width: '90%',
         circular: true,
-        // prev: '#prev',
-        // next: '#next',
 
         scroll: {
             items: 1,
@@ -88,21 +100,13 @@ $(document).ready(function () {
         },
 
     });
-    //  Radom section text animate
 
-    // My Picture about me section
-    $('section.about-me .row div#my-image img').css({
-        "transform": "translateX(0)",
-        "opacity": "1",
-    });
-    // about me section content
-    $('section.about-me .row div#about-content').css({
-        "transform": "translateX(0)",
-        "opacity": "1",
-    });
+// ********************************************************************//
+// animate in the position
+    
     $(window).scroll(function () {
         // Animate the codeing designing img
-        if ($(window).scrollTop() >= 500 && $(window).scrollTop() <= 700 ||$(window).scrollTop() >= 900 ) {
+        if ($(window).scrollTop() >= 500 && $(window).scrollTop() <= 700 || $(window).scrollTop() >= 900) {
             $('#circle-graph img').css({
                 // "display": "block",
                 "transform": "translateY(0)",
@@ -178,16 +182,16 @@ $(document).ready(function () {
 
             })
         }
-
-
-
-    });
-    // Projetc opverlay
+    });  
+});
+//********************************************************************//
+//Project Section
+$(document).ready(function () {
     $("section.project div#pic").mouseenter(function () {
         $(this).children(".about-website").animate({
             opacity: 1
         }, 300);
-        
+
     })
     $("section.project div#pic").mouseleave(function () {
         $(this).children(".about-website").animate({
@@ -196,9 +200,10 @@ $(document).ready(function () {
     })
 });
 
-// nav Click Scroll
+// Contact page map////////////////////////////////////////////
 
-// Contact page map
+//********************************************************************//
+//Map Adresse
 function myMap() {
     var mapCanvas = document.getElementById("map");
     var myCenter = new google.maps.LatLng(55.892251, 12.491735);
