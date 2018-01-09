@@ -875,6 +875,7 @@ section.project div#photos div#pic:hover img {
   border-radius: 5px;
   transform: scale(1.2);
   height: 100%;
+  background-position: top;
 }
 
 section.project div#photos div#pic img {
@@ -926,13 +927,13 @@ section.project div#photos div#pic .about-website div.view a {
 }
 
 section.project div#photos div#pic .about-website div.view a:nth-child(2) {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 section.project div#photos div#pic .about-website div.view a p {
-  color: #f39909;
-  font-weight: 600;
-  font-size: .9em;
+  color: #fd9c00;
+  font-weight: 500;
+  font-size: .8em;
   transition: all .3s;
 }
 
