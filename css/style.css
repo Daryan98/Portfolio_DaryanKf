@@ -881,8 +881,9 @@ section.project div#photos div#pic:hover img {
 section.project div#photos div#pic img {
   width: 100% !important;
   height: auto !important;
+  padding: 5px;
   transition: all .5s;
-  box-shadow: 0px 0px 5px 3px black;
+  border: 1px solid #dbdbdb;
   opacity: .6;
 }
 
