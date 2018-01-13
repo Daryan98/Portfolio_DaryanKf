@@ -188,15 +188,10 @@ $(document).ready(function () {
 //Project Section
 $(document).ready(function () {
     $("section.project div#pic").mouseenter(function () {
-        $(this).children(".about-website").animate({
-            opacity: 1
-        }, 300);
-
+        $(this).children(".about-website").delay(100).slideDown();
     })
     $("section.project div#pic").mouseleave(function () {
-        $(this).children(".about-website").animate({
-            opacity: 0
-        }, 300);
+        $(this).children(".about-website").slideUp()
     })
 });
 
