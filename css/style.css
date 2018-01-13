@@ -861,10 +861,10 @@ section.project div#photos div#pic {
   width: 100%;
   margin: 0px auto 20px;
   position: relative;
-  opacity: .9;
-  transition: opacity .3s;
   overflow: hidden;
   z-index: 1;
+  opacity: .9;
+  transition: opacity .5s;
 }
 
 section.project div#photos div#pic:hover {
@@ -872,10 +872,11 @@ section.project div#photos div#pic:hover {
 }
 
 section.project div#photos div#pic:hover img {
-  border-radius: 5px;
-  transform: scale(1.2);
+  transform: scale(1.05);
   height: 100%;
-  background-position: top;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
 }
 
 section.project div#photos div#pic img {
@@ -884,9 +885,6 @@ section.project div#photos div#pic img {
   padding: 10px;
   transition: all .5s;
   border-radius: 5px;
-  border: 1px solid rgba(224, 224, 224, 0.26);
-  box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
-  display: inline;
 }
 
 section.project div#photos div#pic .about-website {
