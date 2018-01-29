@@ -789,24 +789,18 @@
                 position: relative;
                 overflow: hidden;
                 z-index: 1;
-                opacity: .9;
                 transition: opacity .5s;
                 &:hover {
                     opacity: 1;
-                    img {
-                        transform: scale(1.05);
-                        height: 100%;
-                        width: 100%; // border-radius: 15px;
-                        opacity: 1;
-                    }
+                   
                 }
                 img {
                     width: 100% !important;
                     height: auto !important;
                     padding: 5px;
                     transition: all .5s;
-                    border: 1px solid rgb(219, 219, 219);
-                    opacity: .6;
+                    border: 1px solid rgba(219, 219, 219, 0.5);
+                
                 }
                 .about-website {
                     position: absolute;
@@ -910,6 +904,7 @@
                             align-items: center;
                             justify-content: center;
                             transition: all .2s ease-in-out;
+                            
                             i {
                                 font-size: 1.1em;
                                 color: #CCC;
@@ -917,9 +912,14 @@
                             }
                         }
                     }
+                    li:hover {
+                        a {
+                            background-color: #FFF;
+                        }
+                    }
                     li#facebook {
                         a:hover {
-                            border: 1px solid #3b5998;
+                            // border: 1px solid #3b5998;
                             i {
                                 color: #3b5998;
                             }
@@ -927,7 +927,7 @@
                     }
                     li#twitter {
                         a:hover {
-                            border: 1px solid #00aced;
+                            // border: 1px solid #00aced;
                             i {
                                 color: #00aced;
                             }
@@ -935,7 +935,7 @@
                     }
                     li#instagram {
                         a:hover {
-                            border: 1px solid #bc2a8d;
+                            // border: 1px solid #bc2a8d;
                             i {
                                 color: #bc2a8d;
                             }
@@ -943,7 +943,7 @@
                     }
                     li#linked-in {
                         a:hover {
-                            border: 1px solid #007bb6;
+                            // border: 1px solid #007bb6;
                             i {
                                 color: #007bb6;
                             }

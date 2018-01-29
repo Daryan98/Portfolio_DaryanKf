@@ -874,18 +874,10 @@ section.project div#photos div#pic {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  opacity: .9;
   transition: opacity .5s;
 }
 
 section.project div#photos div#pic:hover {
-  opacity: 1;
-}
-
-section.project div#photos div#pic:hover img {
-  transform: scale(1.05);
-  height: 100%;
-  width: 100%;
   opacity: 1;
 }
 
@@ -894,8 +886,7 @@ section.project div#photos div#pic img {
   height: auto !important;
   padding: 5px;
   transition: all .5s;
-  border: 1px solid #dbdbdb;
-  opacity: .6;
+  border: 1px solid rgba(219, 219, 219, 0.5);
 }
 
 section.project div#photos div#pic .about-website {
@@ -1024,32 +1015,20 @@ footer div#right div.social-media ul li a i {
   transition: .2s ease;
 }
 
-footer div#right div.social-media ul li#facebook a:hover {
-  border: 1px solid #3b5998;
+footer div#right div.social-media ul li:hover a {
+  background-color: #FFF;
 }
 
 footer div#right div.social-media ul li#facebook a:hover i {
   color: #3b5998;
 }
 
-footer div#right div.social-media ul li#twitter a:hover {
-  border: 1px solid #00aced;
-}
-
 footer div#right div.social-media ul li#twitter a:hover i {
   color: #00aced;
 }
 
-footer div#right div.social-media ul li#instagram a:hover {
-  border: 1px solid #bc2a8d;
-}
-
 footer div#right div.social-media ul li#instagram a:hover i {
   color: #bc2a8d;
-}
-
-footer div#right div.social-media ul li#linked-in a:hover {
-  border: 1px solid #007bb6;
 }
 
 footer div#right div.social-media ul li#linked-in a:hover i {
